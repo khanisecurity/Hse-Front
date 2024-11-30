@@ -1,0 +1,62 @@
+﻿@page "/"
+@using Telerik.Blazor
+@using Telerik.Blazor.Components
+@using TelerikGrid.Models.Invoice
+@using TelerikGrid.Models.Products
+@using TelerikGrid.Data
+@using Telerik.FontIcons
+@using Telerik.Blazor.Components.Editor
+@using MudBlazor
+
+@using System.Globalization
+
+@inject IDataService _dataService
+<div style="height: 80vh">
+
+    <TelerikGrid Data="@GridData" Height="100%" @bind-PageSize="@PageSize" EditMode="@GridEditMode.Inline" FilterMode="@GridFilterMode.FilterRow" 
+                 @bind-Page="@CurrentPage" Pageable="true" Sortable="true" Resizable="true" Reorderable="true" SelectionMode="GridSelectionMode.Multiple"
+                 OnUpdate="@UpdateItem" OnDelete="@DeleteItem" OnCreate="@CreateItem" Navigable="true">
+        <GridToolBarTemplate>
+            <GridCommandButton Command="Add" Icon="@FontIcon.Plus">Add Invoice</GridCommandButton>
+            <GridCommandButton Command="ExcelExport" Icon="@FontIcon.FileExcel">Export to Excel</GridCommandButton>
+            <label class="k-checkbox-label"><TelerikCheckBox @bind-Value="@ExportAllPages" />Export All Pages</label>
+        </GridToolBarTemplate>
+
+        <GridExport>
+            <GridExcelExport FileName="telerik-grid-export" AllPages="@ExportAllPages" />
+        </GridExport>
+
+        <GridSettings>
+            <GridPagerSettings InputType="PagerInputType.Buttons" PageSizes="@PageSizes" ButtonCount="5" />
+        </GridSettings>
+
+        <GridColumns>
+            <GridCheckboxColumn ShowColumnMenu="true" Lockable="false" />           
+                    <GridColumn Field="@nameof(Invoice.Product)" Title="Product">
+                        <EditorTemplate>
+                            <TelerikComboBox Data="@Products"
+                                             @bind-Value="@selectedProductId"
+                                             TextField="Name"
+                                             ValueField="Id"
+                                             OnChange="OnProductChanged" ClearButton="true" />
+                        </EditorTemplate>
+                    </GridColumn>
+                    <GridColumn Field="@nameof(Invoice.Unit)" Title="Unit">
+                        <EditorTemplate>
+                            <TelerikComboBox Data="@FilteredUnits" @bind-Value="(context as Invoice).UnitId" TextField="Name" ValueField="Id" ClearButton="true" />
+                        </EditorTemplate>
+                    </GridColumn>
+                    <GridColumn Field="@nameof(Invoice.Quantity)" Title="Quantity">
+                        <EditorTemplate>
+                            <TelerikNumericTextBox @bind-Value="(context as Invoice).Quantity" />
+                        </EditorTemplate>
+                    </GridColumn>
+                    <GridColumn Field="@nameof(Invoice.Date)" Title="Date">
+                        <EditorTemplate>
+                            <TelerikDatePicker @bind-Value="(context as Invoice).Date" />
+                        </EditorTemplate>
+                    </GridColumn>
+        </GridColumns>
+    </TelerikGrid>
+</div>
+

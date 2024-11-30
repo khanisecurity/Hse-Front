@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikGrid", "TelerikGrid\TelerikGrid.csproj", "{AE74F1C5-3BEC-4D11-99A4-AEC54C069657}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0033A3F-5CCE-4476-854E-B4B8E26AA450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0033A3F-5CCE-4476-854E-B4B8E26AA450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0033A3F-5CCE-4476-854E-B4B8E26AA450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0033A3F-5CCE-4476-854E-B4B8E26AA450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE74F1C5-3BEC-4D11-99A4-AEC54C069657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE74F1C5-3BEC-4D11-99A4-AEC54C069657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE74F1C5-3BEC-4D11-99A4-AEC54C069657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE74F1C5-3BEC-4D11-99A4-AEC54C069657}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C002691-E110-412A-89D6-E4DC1F9C0943}
+	EndGlobalSection
+EndGlobal

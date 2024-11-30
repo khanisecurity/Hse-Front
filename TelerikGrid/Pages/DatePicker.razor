@@ -1,0 +1,12 @@
+﻿@page "/datepicker"
+@using System.Globalization
+@using System.Reflection
+@using Telerik.Blazor
+@using Telerik.Blazor.Components
+@using TelerikGrid.Data
+@using MudBlazor
+
+
+<MudDatePicker Label="Current UI Culture" @bind-Date ="_date" />
+<MudDatePicker Label="Persian" @bind-Date ="_date" Culture="@GetPersianCulture()" TitleDateFormat="dddd, dd MMMM" />
+

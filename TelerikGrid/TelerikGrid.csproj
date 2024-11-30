@@ -1,0 +1,46 @@
+﻿
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseRazorSourceGenerator>false</UseRazorSourceGenerator>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Models\ProductDto.cs" />
+    <Compile Remove="Pages\Dashboard2.razor.cs" />
+    <Compile Remove="Pages\PerformanceAndSales.razor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Pages\Dashboard2.razor" />
+    <Content Remove="Pages\PerformanceAndSales.razor" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MudBlazor" Version="7.15.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+    <PackageReference Include="Telerik.UI.for.Blazor" Version="4.0.0" />
+  </ItemGroup>
+
+
+
+	<ItemGroup>
+		<Compile Update="Resources\TelerikMessages.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>TelerikMessages.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Resources\TelerikMessages.fa-IR.resx">
+		  <LastGenOutput>TelerikMessages - Copy.Designer.cs</LastGenOutput>
+		  <Generator>PublicResXFileCodeGenerator</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Resources\TelerikMessages.resx">
+			<Generator>PublicResXFileCodeGenerator</Generator>
+			<LastGenOutput>TelerikMessages.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ProjectExtensions><VisualStudio><UserProperties UseCdnSupport="True" /></VisualStudio></ProjectExtensions>
+</Project>
