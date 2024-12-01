@@ -1,0 +1,22 @@
+﻿@inherits LayoutComponentBase
+@inject NavigationManager navigationManager
+@using BlazorApp1.Pages.Components
+@using Telerik.FontIcons
+
+ <Header />
+    <NotificationModal />
+    <Sidebar />
+    <div class="vertical-overlay"></div>
+    <div class="main-content">
+        <div class="page-content">
+            <div class="content">
+                <TelerikRootComponent>
+                    @Body
+                </TelerikRootComponent>
+            </div>
+        </div>
+        <Footer />
+    </div>
+
+<ThemeSettings /> 
+

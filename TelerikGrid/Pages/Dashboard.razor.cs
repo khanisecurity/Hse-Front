@@ -1,23 +1,18 @@
 ﻿using Telerik.Blazor.Components;
 using TelerikGrid.Models.Invoice;
-using static System.Net.WebRequestMethods;
 using TelerikGrid.Models.Products;
-using Microsoft.AspNetCore.Components;
 
 namespace TelerikGrid.Pages
 {
     public partial class Dashboard
     {
-        
         private List<Invoice> GridData = new List<Invoice>();
         private List<Product> Products = new List<Product>();
         private List<Unit> FilteredUnits = new List<Unit>();
         private int selectedProductId { get; set; }
-
         public List<int?> PageSizes { get; } = new List<int?> { 5, 10, 15, 20, null };
         private int PageSize { get; set; } = 10;
         private int CurrentPage { get; set; } = 1;
-
         private bool ExportAllPages { get; set; }
 
         protected override async Task OnInitializedAsync()

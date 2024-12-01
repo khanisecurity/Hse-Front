@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa" data-layout="vertical" data-topbar="light" data-sidebar="light" dir="rtl" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlazorApp1</title>
+    <base href="/" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- Bootstrap Css -->
+    <link href="/css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="/css/app-rtl.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="/css/custom-rtl.min.css" rel="stylesheet" type="text/css" />
+
+    <!--<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />-->
+    <!--<link href="/css/site.css" rel="stylesheet" />-->
+    <link href="/css/default-ocean-blue.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!--<link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />-->
+    <!--<link href="BlazorApp1.styles.css" rel="stylesheet" />-->
+    <link href="manifest.webmanifest" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
+    <link rel="stylesheet" href="_content/Telerik.UI.for.Blazor/css/kendo-theme-default/all.css" />
+</head>
+
+<body dir="rtl">
+    <div id="layout-wrapper">
+    </div>
+
+    <!--<div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>-->
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+    <!--preloader-->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner-border text-primary avatar-sm" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="customizer-setting d-none d-md-block">
+        <div class="btn-primary rounded-pill shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas" data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas">
+            <i class='mdi mdi-spin mdi-cog-outline fs-22'></i>
+        </div>
+    </div>
+
+
+    <script src="_content/Telerik.UI.for.Blazor/js/telerik-blazor.js" defer></script>
+
+    <script src="/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/libs/simplebar/simplebar.min.js"></script>
+    <script src="/libs/node-waves/waves.min.js"></script>
+    <script src="/libs/feather-icons/feather.min.js"></script>
+    <script src="/js/lord-icon-2.1.0.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/app.js" defer></script>
+
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+</body>
+
+</html>

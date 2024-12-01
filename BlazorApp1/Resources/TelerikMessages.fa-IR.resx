@@ -1,0 +1,1440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aggregate_Average" xml:space="preserve">  
+    <value>متوسط</value>  
+</data>  
+<data name="Aggregate_Count" xml:space="preserve">  
+    <value>تعداد</value>  
+</data>  
+<data name="Aggregate_Max" xml:space="preserve">  
+    <value>حداکثر</value>  
+</data>  
+<data name="Aggregate_Min" xml:space="preserve">  
+    <value>حداقل</value>  
+</data>  
+<data name="Aggregate_Sum" xml:space="preserve">  
+    <value>جمع</value>  
+</data>  
+<data name="AutoComplete_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="AutoComplete_Clear" xml:space="preserve">  
+    <value>پاک کردن</value>  
+</data>  
+<data name="AutoComplete_NoData" xml:space="preserve">  
+    <value>بدون داده</value>  
+</data>  
+<data name="Calendar_Choose_Decade" xml:space="preserve">  
+    <value>یک دهه را انتخاب کنید</value>  
+</data>  
+<data name="Calendar_Choose_Month" xml:space="preserve">  
+    <value>یک ماه را انتخاب کنید</value>  
+</data>  
+<data name="Calendar_Choose_Year" xml:space="preserve">  
+    <value>یک سال را انتخاب کنید</value>  
+</data>  
+<data name="Calendar_GoToNext" xml:space="preserve">  
+    <value>به دوره بعد بروید</value>  
+</data>  
+<data name="Calendar_GoToPrevious" xml:space="preserve">  
+    <value>به دوره قبلی بروید</value>  
+</data>  
+<data name="Calendar_Today" xml:space="preserve">  
+    <value>امروز</value>  
+</data>  
+<data name="Carousel_Next" xml:space="preserve">  
+    <value>بعدی</value>  
+</data>  
+<data name="Carousel_Previous" xml:space="preserve">  
+    <value>قبلی</value>  
+</data>  
+<data name="ColorAlpha_Label" xml:space="preserve">  
+    <value>الف</value>  
+</data>  
+<data name="ColorBlue_Label" xml:space="preserve">  
+    <value>ب</value>  
+</data>  
+<data name="ColorGradient_AlphaSlider_Label" xml:space="preserve">  
+    <value>مقدار اسلایدر آلفا</value>  
+</data>  
+<data name="ColorGradient_HueSlider_Label" xml:space="preserve">  
+    <value>مقدار اسلایدر رنگ</value>  
+</data>  
+<data name="ColorGradient_ToggleButton" xml:space="preserve">  
+    <value>فرمت را تغییر دهید.</value>  
+</data>  
+<data name="ColorGreen_Label" xml:space="preserve">  
+    <value>ج</value>  
+</data>  
+<data name="ColorHex_Label" xml:space="preserve">  
+    <value>HEX</value>  
+</data>  
+<data name="ColorHex_Placeholder" xml:space="preserve">  
+    <value>رنگ هگز</value>  
+</data>  
+<data name="ColorPicker_Apply" xml:space="preserve">  
+    <value>اعمال</value>  
+</data>  
+<data name="ColorPicker_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="ColorPicker_ClearTitle" xml:space="preserve">  
+    <value>پاک کردن</value>  
+</data>  
+<data name="ColorPicker_CurrentColor" xml:space="preserve">  
+    <value>رنگ فعلی</value>  
+</data>  
+<data name="ColorPicker_GradientViewTitle" xml:space="preserve">  
+    <value>انتخاب نمای گرادیان</value>  
+</data>  
+<data name="ColorPicker_Open" xml:space="preserve">  
+    <value>باز کردن</value>  
+</data>  
+<data name="ColorPicker_PaletteViewTitle" xml:space="preserve">  
+    <value>انتخاب نمای پالت</value>  
+</data>  
+<data name="ColorPicker_PreviewColor" xml:space="preserve">  
+    <value>پیش‌نمایش رنگ</value>  
+</data>  
+<data name="ColorRed_Label" xml:space="preserve">  
+    <value>ر</value>  
+</data>  
+<data name="ColumnMenu_Apply" xml:space="preserve">  
+    <value>اعمال</value>  
+</data>  
+<data name="ColumnMenu_ColumnMenu" xml:space="preserve">  
+    <value>منوی ستون</value>  
+</data>  
+<data name="ColumnMenu_Columns" xml:space="preserve">  
+    <value>ستون‌ها</value>  
+</data>  
+<data name="ColumnMenu_Lock" xml:space="preserve">  
+    <value>قفل</value>  
+</data>  
+<data name="ColumnMenu_Reset" xml:space="preserve">  
+    <value>بازنشانی</value>  
+</data>  
+
+<data name="ColumnMenu_SortAscending" xml:space="preserve">  
+    <value>مرتب‌سازی صعودی</value>  
+</data>  
+<data name="ColumnMenu_SortDescending" xml:space="preserve">  
+    <value>مرتب‌سازی نزولی</value>  
+</data>  
+<data name="ColumnMenu_Unlock" xml:space="preserve">  
+    <value>باز کردن قفل</value>  
+</data>  
+<data name="ComboBox_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="ComboBox_Clear" xml:space="preserve">  
+    <value>پاک کردن</value>  
+</data>  
+<data name="ComboBox_NoData" xml:space="preserve">  
+    <value>بدون داده</value>  
+</data>  
+<data name="ComboBox_Open" xml:space="preserve">  
+    <value>باز کردن</value>  
+</data>  
+<data name="DateInput_ParsingErrorMessage" xml:space="preserve">  
+    <value>فرمت تاریخ قابل پردازش نیست. لطفاً تاریخ معتبری وارد کنید.</value>  
+</data>  
+<data name="DateInput_ValidationErrorMessage" xml:space="preserve">  
+    <value>تاریخ معتبر نیست.</value>  
+</data>  
+<data name="DatePicker_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="DatePicker_Open" xml:space="preserve">  
+    <value>باز کردن</value>  
+</data>  
+<data name="DatePicker_SetDate" xml:space="preserve">  
+    <value>تنظیم تاریخ</value>  
+</data>  
+<data name="DateRangePicker_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="DateRangePicker_ConfirmSelection" xml:space="preserve">  
+    <value>تأیید انتخاب</value>  
+</data>  
+<data name="DateRangePicker_End" xml:space="preserve">  
+    <value>پایان</value>  
+</data>  
+<data name="DateRangePicker_Start" xml:space="preserve">  
+    <value>شروع</value>  
+</data>  
+<data name="DateTimePicker_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="DateTimePicker_Date" xml:space="preserve">  
+    <value>تاریخ</value>  
+</data>  
+<data name="DateTimePicker_Open" xml:space="preserve">  
+    <value>باز کردن</value>  
+</data>  
+<data name="DateTimePicker_Set" xml:space="preserve">  
+    <value>تنظیم</value>  
+</data>  
+<data name="DateTimePicker_Time" xml:space="preserve">  
+    <value>زمان</value>  
+</data>  
+<data name="Dialog_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="Dialog_Close" xml:space="preserve">  
+    <value>بستن</value>  
+</data>  
+<data name="Dialog_Ok" xml:space="preserve">  
+    <value>تأیید</value>  
+</data>  
+<data name="DropDownList_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="DropDownList_NoData" xml:space="preserve">  
+    <value>بدون داده</value>  
+</data>  
+<data name="DropDownList_Open" xml:space="preserve">  
+    <value>باز کردن</value>  
+</data>  
+<data name="Editor_AddColumnAfter" xml:space="preserve">  
+    <value>افزودن ستون به سمت راست</value>  
+</data>  
+<data name="Editor_AddColumnBefore" xml:space="preserve">  
+    <value>افزودن ستون به سمت چپ</value>  
+</data>  
+<data name="Editor_AddRowAfter" xml:space="preserve">  
+    <value>افزودن ردیف زیر</value>  
+</data>  
+<data name="Editor_AddRowBefore" xml:space="preserve">  
+    <value>افزودن ردیف بالا</value>  
+</data>  
+<data name="Editor_AddRowBelow" xml:space="preserve">  
+    <value>افزودن ردیف زیر</value>  
+</data>  
+<data name="Editor_AlignCenter" xml:space="preserve">  
+    <value>مرکز چین کردن متن</value>  
+</data>  
+<data name="Editor_AlignJustify" xml:space="preserve">  
+    <value>تراز کردن متن</value>  
+</data>  
+<data name="Editor_AlignLeft" xml:space="preserve">  
+    <value>چپ‌چین کردن متن</value>  
+</data>  
+<data name="Editor_AlignRight" xml:space="preserve">  
+    <value>راست‌چین کردن متن</value>  
+</data>  
+<data name="Editor_BackColor" xml:space="preserve">  
+    <value>رنگ زمینه</value>  
+</data>  
+<data name="Editor_Bold" xml:space="preserve">  
+    <value>یرنگ</value>  
+</data>  
+<data name="Editor_CreateLink" xml:space="preserve">  
+    <value>درج هایپرلینک</value>  
+</data>  
+<data name="Editor_CreateTable" xml:space="preserve">  
+    <value>ایجاد جدول</value>  
+</data>  
+<data name="Editor_CreateTablePopup" xml:space="preserve">  
+    <value>ایجاد جدول {0}</value>  
+</data>  
+<data name="Editor_DeleteColumn" xml:space="preserve">  
+    <value>حذف ستون</value>  
+</data>  
+<data name="Editor_DeleteRow" xml:space="preserve">  
+    <value>حذف ردیف</value>  
+</data>  
+<data name="Editor_DialogCancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="Editor_DialogClose" xml:space="preserve">  
+    <value>بستن</value>  
+</data>  
+<data name="Editor_DialogInsert" xml:space="preserve">  
+    <value>درج</value>  
+</data>  
+<data name="Editor_DialogUpdate" xml:space="preserve">  
+    <value>به‌روز رسانی</value>  
+</data>  
+<data name="Editor_FontFamily" xml:space="preserve">  
+    <value>نوع فونت</value>  
+</data>  
+<data name="Editor_FontSize" xml:space="preserve">  
+    <value>اندازه فونت</value>  
+</data>  
+<data name="Editor_ForeColor" xml:space="preserve">  
+    <value>رنگ</value>  
+</data>  
+<data name="Editor_Format" xml:space="preserve">  
+    <value>قالب</value>  
+</data>  
+
+<data name="Editor_ImageAltText" xml:space="preserve">  
+    <value>متن جایگزین:</value>  
+</data>  
+<data name="Editor_ImageHeight" xml:space="preserve">  
+    <value>ارتفاع:</value>  
+</data>  
+<data name="Editor_ImageWebAddress" xml:space="preserve">  
+    <value>آدرس وب:</value>  
+</data>  
+<data name="Editor_ImageWidth" xml:space="preserve">  
+    <value>عرض:</value>  
+</data>  
+<data name="Editor_Indent" xml:space="preserve">  
+    <value>تو رفتگی</value>  
+</data>  
+<data name="Editor_InsertFile" xml:space="preserve">  
+    <value>درج فایل</value>  
+</data>  
+<data name="Editor_InsertHtml" xml:space="preserve">  
+    <value>درج HTML</value>  
+</data>  
+<data name="Editor_InsertImage" xml:space="preserve">  
+    <value>درج تصویر</value>  
+</data>  
+<data name="Editor_InsertOrderedList" xml:space="preserve">  
+    <value>درج لیست شمارشی</value>  
+</data>  
+<data name="Editor_InsertUnorderedList" xml:space="preserve">  
+    <value>درج لیست بدون شماره</value>  
+</data>  
+<data name="Editor_Italic" xml:space="preserve">  
+    <value>ایتالیک</value>  
+</data>  
+<data name="Editor_LinkOpenNewWindow" xml:space="preserve">  
+    <value>باز کردن در پنجره جدید</value>  
+</data>  
+<data name="Editor_LinkText" xml:space="preserve">  
+    <value>متن</value>  
+</data>  
+<data name="Editor_LinkTitle" xml:space="preserve">  
+    <value>عنوان:</value>  
+</data>  
+<data name="Editor_LinkWebAddress" xml:space="preserve">  
+    <value>آدرس وب:</value>  
+</data>  
+<data name="Editor_MergeCells" xml:space="preserve">  
+    <value>ادغام سلول‌ها</value>  
+</data>  
+<data name="Editor_Outdent" xml:space="preserve">  
+    <value>کاهش تو رفتگی</value>  
+</data>  
+<data name="Editor_Redo" xml:space="preserve">  
+    <value>از نو انجام دادن</value>  
+</data>  
+<data name="Editor_SetHtml" xml:space="preserve">  
+    <value>مشاهده HTML</value>  
+</data>  
+<data name="Editor_SplitCell" xml:space="preserve">  
+    <value>تقسیم سلول</value>  
+</data>  
+<data name="Editor_Strikethrough" xml:space="preserve">  
+    <value>خط خورده</value>  
+</data>  
+<data name="Editor_Subscript" xml:space="preserve">  
+    <value>زیرنویس</value>  
+</data>  
+<data name="Editor_Superscript" xml:space="preserve">  
+    <value>بالا نویس</value>  
+</data>  
+<data name="Editor_Underline" xml:space="preserve">  
+    <value>زیرخط</value>  
+</data>  
+<data name="Editor_Undo" xml:space="preserve">  
+    <value>بازگشت</value>  
+</data>  
+<data name="Editor_Unlink" xml:space="preserve">  
+    <value>حذف هایپرلینک</value>  
+</data>  
+
+ <data name="FileManager_ConfirmDeleteCancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="FileManager_ConfirmDeleteOk" xml:space="preserve">  
+    <value>تأیید</value>  
+</data>  
+<data name="FileManager_ConfirmDeleteText" xml:space="preserve">  
+    <value>آیا مطمئن هستید که می‌خواهید فایل(ها) را حذف کنید؟</value>  
+</data>  
+<data name="FileManager_ConfirmDeleteTitle" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="FileManager_ContextMenu_Delete" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="FileManager_ContextMenu_Download" xml:space="preserve">  
+    <value>دانلود</value>  
+</data>  
+<data name="FileManager_ContextMenu_Rename" xml:space="preserve">  
+    <value>تغییر نام</value>  
+</data>  
+<data name="FileManager_DetailsPane_DateCreated" xml:space="preserve">  
+    <value>تاریخ ایجاد</value>  
+</data>  
+<data name="FileManager_DetailsPane_DateModified" xml:space="preserve">  
+    <value>تاریخ ویرایش</value>  
+</data>  
+<data name="FileManager_DetailsPane_NoFileSelected" xml:space="preserve">  
+    <value>هیچ فایلی انتخاب نشده</value>  
+</data>  
+<data name="FileManager_DetailsPane_Size" xml:space="preserve">  
+    <value>اندازه</value>  
+</data>  
+<data name="FileManager_DetailsPane_Type" xml:space="preserve">  
+    <value>نوع</value>  
+</data>  
+<data name="FileManager_FileView_Items" xml:space="preserve">  
+    <value>موردها</value>  
+</data>  
+<data name="FileManager_Grid_DateCreatedColumnTitle" xml:space="preserve">  
+    <value>تاریخ ایجاد</value>  
+</data>  
+<data name="FileManager_Grid_FileSizeColumnTitle" xml:space="preserve">  
+    <value>اندازه فایل</value>  
+</data>  
+<data name="FileManager_Grid_NameColumnTitle" xml:space="preserve">  
+    <value>نام</value>  
+</data>  
+<data name="FileManager_SearchBox_Placeholder" xml:space="preserve">  
+    <value>جستجو</value>  
+</data>  
+<data name="FileManager_SearchBox_Title" xml:space="preserve">  
+    <value>جستجو</value>  
+</data>  
+<data name="FileManager_ToolBar_CreateNewFolder" xml:space="preserve">  
+    <value>پوشه جدید</value>  
+</data>  
+<data name="FileManager_ToolBar_SortBy" xml:space="preserve">  
+    <value>مرتب‌سازی بر اساس</value>  
+</data>  
+<data name="FileManager_ToolBar_SortByDateCreated" xml:space="preserve">  
+    <value>تاریخ ایجاد</value>  
+</data>  
+<data name="FileManager_ToolBar_SortByDateModified" xml:space="preserve">  
+    <value>تاریخ ویرایش</value>  
+</data>  
+<data name="FileManager_ToolBar_SortByName" xml:space="preserve">  
+    <value>نام</value>  
+</data>  
+<data name="FileManager_ToolBar_SortBySize" xml:space="preserve">  
+    <value>اندازه</value>  
+</data>  
+<data name="FileManager_ToolBar_SortByType" xml:space="preserve">  
+    <value>نوع</value>  
+</data>  
+<data name="FileManager_ToolBar_Upload" xml:space="preserve">  
+    <value>بارگذاری</value>  
+</data>  
+<data name="FileManager_ToolBar_ViewDetails" xml:space="preserve">  
+    <value>مشاهده جزئیات</value>  
+</data>  
+<data name="FileManager_UploadDialogCancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="FileManager_UploadDialogOk" xml:space="preserve">  
+    <value>تأیید</value>  
+</data>  
+<data name="FileManager_UploadDialogTitle" xml:space="preserve">  
+    <value>بارگذاری فایل‌ها</value>  
+</data>  
+<data name="FileSelect_InvalidFileExtension" xml:space="preserve">  
+    <value>نوع فایل مجاز نیست.</value>  
+</data>  
+<data name="FileSelect_InvalidMaxFileSize" xml:space="preserve">  
+    <value>حجم فایل خیلی بزرگ است.</value>  
+</data>  
+<data name="FileSelect_InvalidMinFileSize" xml:space="preserve">  
+    <value>حجم فایل خیلی کوچک است.</value>  
+</data>  
+<data name="FileSelect_Remove" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="FileSelect_SelectFiles" xml:space="preserve">  
+    <value>انتخاب فایل‌ها...</value>  
+</data>  
+<data name="Filter_AddExpression" xml:space="preserve">  
+    <value>افزودن بیان</value>  
+</data>  
+<data name="Filter_AddGroup" xml:space="preserve">  
+    <value>افزودن گروه</value>  
+</data>  
+<data name="Filter_AdditionalOperator" xml:space="preserve">  
+    <value>عملگر اضافی</value>  
+</data>  
+<data name="Filter_AdditionalValue" xml:space="preserve">  
+    <value>مقدار اضافی</value>  
+</data>  
+<data name="Filter_All" xml:space="preserve">  
+    <value>(همه)</value>  
+</data>  
+<data name="Filter_And" xml:space="preserve">  
+    <value>و</value>  
+</data>  
+<data name="Filter_BooleanIsEqualTo" xml:space="preserve">  
+    <value>برابر با</value>  
+</data>  
+<data name="Filter_BooleanIsNotEqualTo" xml:space="preserve">  
+    <value>برابر نیست با</value>  
+</data>  
+<data name="Filter_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+ <data name="Filter_Clear" xml:space="preserve">  
+    <value>پاک کردن</value>  
+</data>  
+<data name="Filter_DateIsEqualTo" xml:space="preserve">  
+    <value>برابر با</value>  
+</data>  
+<data name="Filter_DateIsGreaterThan" xml:space="preserve">  
+    <value>بعد از</value>  
+</data>  
+<data name="Filter_DateIsGreaterThanOrEqualTo" xml:space="preserve">  
+    <value>بعد از یا برابر با</value>  
+</data>  
+<data name="Filter_DateIsLessThan" xml:space="preserve">  
+    <value>قبل از</value>  
+</data>  
+<data name="Filter_DateIsLessThanOrEqualTo" xml:space="preserve">  
+    <value>قبل از یا برابر با</value>  
+</data>  
+<data name="Filter_DateIsNotEqualTo" xml:space="preserve">  
+    <value>برابر نیست با</value>  
+</data>  
+<data name="Filter_DateIsNotNull" xml:space="preserve">  
+    <value>خالی نیست</value>  
+</data>  
+<data name="Filter_DateIsNull" xml:space="preserve">  
+    <value>خالی است</value>  
+</data>  
+<data name="Filter_EnumIsEqualTo" xml:space="preserve">  
+    <value>برابر با</value>  
+</data>  
+<data name="Filter_EnumIsNotEqualTo" xml:space="preserve">  
+    <value>برابر نیست با</value>  
+</data>  
+<data name="Filter_EnumIsNotNull" xml:space="preserve">  
+    <value>خالی نیست</value>  
+</data>  
+<data name="Filter_EnumIsNull" xml:space="preserve">  
+    <value>خالی است</value>  
+</data>  
+<data name="Filter_Filter" xml:space="preserve">  
+    <value>فیلتر</value>  
+</data>  
+<data name="Filter_FilterLabel" xml:space="preserve">  
+    <value>فیلتر</value>  
+</data>  
+<data name="Filter_FilterSettings" xml:space="preserve">  
+    <value>تنظیمات فیلتر</value>  
+</data>  
+<data name="Filter_Info" xml:space="preserve">  
+    <value>نمایش رکوردهایی که مقدار آنها</value>  
+</data>  
+<data name="Filter_IsFalse" xml:space="preserve">  
+    <value>غلط است</value>  
+</data>  
+<data name="Filter_IsTrue" xml:space="preserve">  
+    <value>درست است</value>  
+</data>  
+<data name="Filter_NoData" xml:space="preserve">  
+    <value>هیچ داده‌ای وجود ندارد</value>  
+</data>  
+<data name="Filter_NumberIsEqualTo" xml:space="preserve">  
+    <value>برابر با</value>  
+</data>  
+<data name="Filter_NumberIsGreaterThan" xml:space="preserve">  
+    <value>بیشتر از</value>  
+</data>  
+<data name="Filter_NumberIsGreaterThanOrEqualTo" xml:space="preserve">  
+    <value>بیشتر از یا برابر با</value>  
+</data>  
+<data name="Filter_NumberIsLessThan" xml:space="preserve">  
+    <value>کمتر از</value>  
+</data>  
+<data name="Filter_NumberIsLessThanOrEqualTo" xml:space="preserve">  
+    <value>کمتر از یا برابر با</value>  
+</data>  
+<data name="Filter_NumberIsNotEqualTo" xml:space="preserve">  
+    <value>برابر نیست با</value>  
+</data>  
+<data name="Filter_NumberIsNotNull" xml:space="preserve">  
+    <value>خالی نیست</value>  
+</data>  
+<data name="Filter_NumberIsNull" xml:space="preserve">  
+    <value>خالی است</value>  
+</data>  
+<data name="Filter_Operator" xml:space="preserve">  
+    <value>عملگر</value>  
+</data>  
+<data name="Filter_Or" xml:space="preserve">  
+    <value>یا</value>  
+</data>  
+<data name="Filter_Remove" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="Filter_Search" xml:space="preserve">  
+    <value>جستجو</value>  
+</data>  
+<data name="Filter_SelectAll" xml:space="preserve">  
+    <value>انتخاب همه</value>  
+</data>  
+<data name="Filter_SelectValue" xml:space="preserve">  
+    <value>-انتخاب مقدار-</value>  
+</data>  
+<data name="Filter_StringContains" xml:space="preserve">  
+    <value>شامل</value>  
+</data>  
+<data name="Filter_StringDoesNotContain" xml:space="preserve">  
+    <value>شامل نیست</value>  
+</data>  
+<data name="Filter_StringEndsWith" xml:space="preserve">  
+    <value>با</value>  
+</data>  
+<data name="Filter_StringIsEmpty" xml:space="preserve">  
+    <value>خالی است</value>  
+</data>  
+<data name="Filter_StringIsEqualTo" xml:space="preserve">  
+    <value>برابر با</value>  
+</data>  
+<data name="Filter_StringIsNotEmpty" xml:space="preserve">  
+    <value>خالی نیست</value>  
+</data>  
+<data name="Filter_StringIsNotEqualTo" xml:space="preserve">  
+    <value>برابر نیست با</value>  
+</data>  
+<data name="Filter_StringIsNotNull" xml:space="preserve">  
+    <value>خالی نیست</value>  
+</data>  
+<data name="Filter_StringIsNotNullOrEmpty" xml:space="preserve">  
+    <value>دارای مقدار</value>  
+</data>  
+<data name="Filter_StringIsNull" xml:space="preserve">  
+    <value>خالی است</value>  
+</data>  
+<data name="Filter_StringIsNullOrEmpty" xml:space="preserve">  
+    <value>بدون مقدار</value>  
+</data>  
+<data name="Filter_StringStartsWith" xml:space="preserve">  
+    <value>شروع می‌شود با</value>  
+</data>  
+<data name="Filter_Value" xml:space="preserve">  
+    <value>مقدار</value>  
+</data>  
+<data name="Form_Clear" xml:space="preserve">  
+    <value>پاک کردن</value>  
+</data>  
+<data name="Form_Submit" xml:space="preserve">  
+    <value>ارسال</value>  
+</data>  
+<data name="Gantt_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="Gantt_Day" xml:space="preserve">  
+    <value>روز</value>  
+</data>  
+<data name="Gantt_Delete" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="Gantt_DialogClose" xml:space="preserve">  
+    <value>بستن</value>  
+</data>  
+<data name="Gantt_Editor_EditorTitle" xml:space="preserve">  
+    <value>وظیفه</value>  
+</data>  
+<data name="Gantt_Editor_End" xml:space="preserve">  
+    <value>پایان</value>  
+</data>  
+<data name="Gantt_Editor_EndTimeValueValidationMessage" xml:space="preserve">  
+    <value>زمان پایان باید بعد از زمان شروع باشد.</value>  
+</data>  
+<data name="Gantt_Editor_PercentComplete" xml:space="preserve">  
+    <value>کامل</value>  
+</data>  
+<data name="Gantt_Editor_Start" xml:space="preserve">  
+    <value>شروع</value>  
+</data>  
+<data name="Gantt_Editor_StartTimeValueValidationMessage" xml:space="preserve">  
+    <value>زمان شروع باید قبل از زمان پایان باشد.</value>  
+</data>  
+<data name="Gantt_Editor_Title" xml:space="preserve">  
+    <value>عنوان</value>  
+</data>  
+<data name="Gantt_Editor_TitleRequiredValidationMessage" xml:space="preserve">  
+    <value>عنوان الزامی است.</value>  
+</data>  
+<data name="Gantt_Month" xml:space="preserve">  
+    <value>ماه</value>  
+</data>  
+<data name="Gantt_Save" xml:space="preserve">  
+    <value>ذخیره</value>  
+</data>  
+<data name="Gantt_Week" xml:space="preserve">  
+    <value>هفته</value>  
+</data>  
+<data name="Gantt_Year" xml:space="preserve">  
+    <value>سال</value>  
+</data>  
+<data name="Grid_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="Grid_CancelChanges" xml:space="preserve">  
+    <value>لغو تغییرات</value>  
+</data>  
+<data name="Grid_CancelDelete" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="Grid_CheckAll" xml:space="preserve">  
+    <value>انتخاب همه</value>  
+</data>  
+<data name="Grid_Columns" xml:space="preserve">  
+    <value>ستون‌ها</value>  
+</data>  
+<data name="Grid_ColumnSettings" xml:space="preserve">  
+    <value>تنظیمات ستون</value>  
+</data>  
+<data name="Grid_Confirmation" xml:space="preserve">  
+    <value>آیا مطمئن هستید که می‌خواهید این رکورد را حذف کنید؟</value>  
+</data>  
+<data name="Grid_ConfirmDelete" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="Grid_ConfirmDeleteCancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="Grid_ConfirmDeleteOk" xml:space="preserve">  
+    <value>باشه</value>  
+</data>  
+<data name="Grid_ConfirmDeleteText" xml:space="preserve">  
+    <value>آیا مطمئن هستید که می‌خواهید این رکورد را حذف کنید؟</value>  
+</data>  
+<data name="Grid_ConfirmDeleteTitle" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="Grid_Create" xml:space="preserve">  
+    <value>افزودن رکورد جدید</value>  
+</data>  
+<data name="Grid_Csv" xml:space="preserve">  
+    <value>صادرات به CSV</value>  
+</data>  
+<data name="Grid_DataTable" xml:space="preserve">  
+    <value>جدول داده‌ها</value>  
+</data>  
+<data name="Grid_Delete" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="Grid_DialogClose" xml:space="preserve">  
+    <value>بستن</value>  
+</data>  
+<data name="Grid_Done" xml:space="preserve">  
+    <value>انجام شد</value>  
+</data>  
+<data name="Grid_DragItems" xml:space="preserve">  
+    <value>موارد انتخاب شده</value>  
+</data>  
+<data name="Grid_DragRowLabel" xml:space="preserve">  
+    <value>کشیدن ردیف</value>  
+</data>  
+<data name="Grid_Edit" xml:space="preserve">  
+    <value>ویرایش</value>  
+</data>  
+<data name="Grid_Excel" xml:space="preserve">  
+    <value>صادرات به Excel</value>  
+</data>  
+<data name="Grid_Filter" xml:space="preserve">  
+    <value>فیلتر</value>  
+</data>  
+<data name="Grid_FilterMenuSettings" xml:space="preserve">  
+    <value>تنظیمات منوی فیلتر ستون {0}</value>  
+</data>  
+<data name="Grid_FilterRowLabel" xml:space="preserve">  
+    <value>فیلتر {0}</value>  
+</data>  
+<data name="Grid_GroupHeaderLabel" xml:space="preserve">  
+    <value>سرصفحه گروه جدول</value>  
+</data>  
+<data name="Grid_Lock" xml:space="preserve">  
+    <value>قفل</value>  
+</data>  
+<data name="Grid_NoRecords" xml:space="preserve">  
+    <value>هیچ رکوردی در دسترس نمی‌باشد</value>  
+</data>  
+<data name="Grid_Remove" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="Grid_SaveChanges" xml:space="preserve">  
+    <value>ذخیره تغییرات</value>  
+</data>  
+<data name="Grid_Search" xml:space="preserve">  
+    <value>جستجو...</value>  
+</data>  
+<data name="Grid_Select" xml:space="preserve">  
+    <value>انتخاب</value>  
+</data>  
+<data name="Grid_SelectAllRows" xml:space="preserve">  
+    <value>انتخاب همه ردیف‌ها</value>  
+</data>  
+<data name="Grid_SelectRow" xml:space="preserve">  
+    <value>انتخاب یک ردیف</value>  
+</data>  
+<data name="Grid_SortAscending" xml:space="preserve">  
+    <value>مرتب‌سازی صعودی</value>  
+</data>  
+<data name="Grid_SortDescending" xml:space="preserve">  
+    <value>مرتب‌سازی نزولی</value>  
+</data>  
+<data name="Grid_SortedAscending" xml:space="preserve">  
+    <value>مرتب‌شده به صورت صعودی</value>  
+</data>  
+<data name="Grid_SortedDescending" xml:space="preserve">  
+    <value>مرتب‌شده به صورت نزولی</value>  
+</data>  
+<data name="Grid_ToolbarLabel" xml:space="preserve">  
+    <value>نوار ابزار جدول</value>  
+</data>  
+<data name="Grid_Unlock" xml:space="preserve">  
+    <value>آزاد کردن</value>  
+</data>  
+<data name="Grid_Update" xml:space="preserve">  
+    <value>به‌روزرسانی</value>  
+</data>  
+<data name="Group_Empty" xml:space="preserve">  
+    <value>یک سرصفحه ستون را بکشید و در اینجا رها کنید تا بر اساس آن ستون گروه‌بندی کنید</value>  
+</data>  
+<data name="MultiSelect_Apply" xml:space="preserve">  
+    <value>اعمال</value>  
+</data>  
+<data name="MultiSelect_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="MultiSelect_Clear" xml:space="preserve">  
+    <value>پاک کردن</value>  
+</data>  
+<data name="MultiSelect_NoData" xml:space="preserve">  
+    <value>هیچ داده‌ای</value>  
+</data>  
+<data name="NumericTextBox_DecreaseValue" xml:space="preserve">  
+    <value>کاهش مقدار</value>  
+</data>  
+<data name="NumericTextBox_IncreaseValue" xml:space="preserve">  
+    <value>افزایش مقدار</value>  
+</data>  
+<data name="Optional_Label" xml:space="preserve">  
+    <value>اختیاری</value>  
+</data>  
+<data name="Pager_AllPages" xml:space="preserve">  
+    <value>همه</value>  
+</data>  
+<data name="Pager_Display" xml:space="preserve">  
+    <value>{0} - {1} از {2} مورد</value>  
+</data>  
+<data name="Pager_Empty" xml:space="preserve">  
+    <value>هیچ موردی برای نمایش وجود ندارد</value>  
+</data>  
+<data name="Pager_First" xml:space="preserve">  
+    <value>به صفحه اول بروید</value>  
+</data>  
+<data name="Pager_ItemsPerPage" xml:space="preserve">  
+    <value>مورد در هر صفحه</value>  
+</data>  
+<data name="Pager_Last" xml:space="preserve">  
+    <value>به صفحه آخر بروید</value>  
+</data>  
+<data name="Pager_MorePages" xml:space="preserve">  
+    <value>صفحات بیشتر</value>  
+</data>  
+<data name="Pager_Next" xml:space="preserve">  
+    <value>به صفحه بعد بروید</value>  
+</data>  
+<data name="Pager_Of" xml:space="preserve">  
+    <value>از {0}</value>  
+</data>  
+<data name="Pager_Page" xml:space="preserve">  
+    <value>صفحه</value>  
+</data>  
+<data name="Pager_PageDisplay" xml:space="preserve">  
+    <value>صفحه {0}</value>  
+</data>  
+<data name="Pager_PageInputLabel" xml:space="preserve">  
+    <value>یک صفحه را انتخاب کنید</value>  
+</data>  
+<data name="Pager_Previous" xml:space="preserve">  
+    <value>به صفحه قبلی بروید</value>  
+</data>  
+<data name="Pager_Refresh" xml:space="preserve">  
+    <value>بارگذاری مجدد</value>  
+</data>  
+<data name="Pager_WrapperLabel" xml:space="preserve">  
+    <value>ناوبری صفحه، صفحه {0} از {1}</value>  
+</data>
+<data name="PdfViewer_Search_Close" xml:space="preserve">  
+    <value>بستن</value>  
+</data>  
+<data name="PdfViewer_Search_MatchCase" xml:space="preserve">  
+    <value>تطابق با حروف بزرگ و کوچک</value>  
+</data>  
+<data name="PdfViewer_Search_MatchesOf" xml:space="preserve">  
+    <value>از</value>  
+</data>  
+<data name="PdfViewer_Search_NextMatch" xml:space="preserve">  
+    <value>تطابق بعدی</value>  
+</data>  
+<data name="PdfViewer_Search_Placeholder" xml:space="preserve">  
+    <value>جستجو</value>  
+</data>  
+<data name="PdfViewer_Search_PreviousMatch" xml:space="preserve">  
+    <value>تطابق قبلی</value>  
+</data>  
+<data name="PdfViewer_ToolBar_Download" xml:space="preserve">  
+    <value>دانلود</value>  
+</data>  
+<data name="PdfViewer_ToolBar_Open" xml:space="preserve">  
+    <value>باز کردن</value>  
+</data>  
+<data name="PdfViewer_ToolBar_Panning" xml:space="preserve">  
+    <value>فعال کردن جابجایی</value>  
+</data>  
+<data name="PdfViewer_ToolBar_Print" xml:space="preserve">  
+    <value>چاپ</value>  
+</data>  
+<data name="PdfViewer_ToolBar_Search" xml:space="preserve">  
+    <value>جستجو</value>  
+</data>  
+<data name="PdfViewer_ToolBar_TextSelection" xml:space="preserve">  
+    <value>فعال کردن انتخاب</value>  
+</data>  
+<data name="PdfViewer_ToolBar_ZoomActualWidth" xml:space="preserve">  
+    <value>عرض واقعی</value>  
+</data>  
+<data name="PdfViewer_ToolBar_ZoomFitToPage" xml:space="preserve">  
+    <value>تناسب با صفحه</value>  
+</data>  
+<data name="PdfViewer_ToolBar_ZoomFitToWidth" xml:space="preserve">  
+    <value>تناسب با عرض</value>  
+</data>  
+<data name="PdfViewer_ToolBar_ZoomIn" xml:space="preserve">  
+    <value>زوم در</value>  
+</data>  
+<data name="PdfViewer_ToolBar_ZoomOut" xml:space="preserve">  
+    <value>زوم خارج</value>  
+</data>  
+<data name="Scheduler_AllDay" xml:space="preserve">  
+    <value>تمام روز</value>  
+</data>  
+<data name="Scheduler_AllEvents" xml:space="preserve">  
+    <value>تمام رویدادها</value>  
+</data>  
+<data name="Scheduler_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="Scheduler_ConfirmDeleteCancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="Scheduler_ConfirmDeleteOk" xml:space="preserve">  
+    <value>تایید</value>  
+</data>  
+<data name="Scheduler_ConfirmDeleteText" xml:space="preserve">  
+    <value>آیا مطمئن هستید که می‌خواهید این رویداد را حذف کنید؟</value>  
+</data>  
+<data name="Scheduler_ConfirmDeleteTitle" xml:space="preserve">  
+    <value>حذف رویداد</value>  
+</data>  
+<data name="Scheduler_Day" xml:space="preserve">  
+    <value>روز</value>  
+</data>  
+<data name="Scheduler_Delete" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="Scheduler_DialogClose" xml:space="preserve">  
+    <value>بستن</value>  
+</data>  
+<data name="Scheduler_Editor_Description" xml:space="preserve">  
+    <value>توضیحات</value>  
+</data>  
+<data name="Scheduler_Editor_EditorTitle" xml:space="preserve">  
+    <value>رویداد</value>  
+</data>  
+<data name="Scheduler_Editor_End" xml:space="preserve">  
+    <value>پایان</value>  
+</data>  
+<data name="Scheduler_Editor_EndTimeRequiredValidationMessage" xml:space="preserve">  
+    <value>زمان پایان الزامی است.</value>  
+</data>  
+<data name="Scheduler_Editor_EndTimeValueValidationMessage" xml:space="preserve">  
+    <value>زمان پایان باید بعد از زمان شروع باشد.</value>  
+</data>  
+<data name="Scheduler_Editor_IsAllDay" xml:space="preserve">  
+    <value>رویداد تمام روز</value>  
+</data>  
+<data name="Scheduler_Editor_Repeat" xml:space="preserve">  
+    <value>تکرار</value>  
+</data>  
+<data name="Scheduler_Editor_Start" xml:space="preserve">  
+    <value>شروع</value>  
+</data>  
+<data name="Scheduler_Editor_StartTimeRequiredValidationMessage" xml:space="preserve">  
+    <value>زمان شروع الزامی است.</value>  
+</data>  
+<data name="Scheduler_Editor_StartTimeValueValidationMessage" xml:space="preserve">  
+    <value>زمان شروع باید قبل از زمان پایان باشد.</value>  
+</data>  
+<data name="Scheduler_Editor_Title" xml:space="preserve">  
+    <value>عنوان</value>  
+</data>  
+<data name="Scheduler_Editor_TitleRequiredValidationMessage" xml:space="preserve">  
+    <value>عنوان الزامی است.</value>  
+</data>  
+<data name="Scheduler_Month" xml:space="preserve">  
+    <value>ماه</value>  
+</data>  
+<data name="Scheduler_MultiDay" xml:space="preserve">  
+    <value>چند روزه</value>  
+</data>  
+<data name="Scheduler_Next" xml:space="preserve">  
+    <value>بعدی</value>  
+</data>  
+<data name="Scheduler_Previous" xml:space="preserve">  
+    <value>قبلی</value>  
+</data>  
+<data name="Scheduler_Recurrence_DeleteRecurring" xml:space="preserve">  
+    <value>آیا می‌خواهید فقط این رویداد را حذف کنید یا کل سری را؟</value>  
+</data>  
+<data name="Scheduler_Recurrence_DeleteWindowOccurrence" xml:space="preserve">  
+    <value>حذف وقوع فعلی</value>  
+</data>  
+<data name="Scheduler_Recurrence_DeleteWindowSeries" xml:space="preserve">  
+    <value>حذف سری</value>  
+</data>  
+<data name="Scheduler_Recurrence_DeleteWindowTitle" xml:space="preserve">  
+    <value>حذف وقت تکراری</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Daily_Interval" xml:space="preserve">  
+    <value> روز(ها)</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Daily_RepeatEvery" xml:space="preserve">  
+    <value>هر</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_End_After" xml:space="preserve">  
+    <value>پس از </value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_End_Label" xml:space="preserve">  
+    <value>پایان</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_End_Never" xml:space="preserve">  
+    <value>هرگز</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_End_Occurrence" xml:space="preserve">  
+    <value> وقوع(ها)</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_End_On" xml:space="preserve">  
+    <value>در </value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Frequencies_Daily" xml:space="preserve">  
+    <value>روزانه</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Frequencies_Monthly" xml:space="preserve">  
+    <value>ماهانه</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Frequencies_Never" xml:space="preserve">  
+    <value>هرگز</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Frequencies_Weekly" xml:space="preserve">  
+    <value>هفتگی</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Frequencies_Yearly" xml:space="preserve">  
+    <value>سالانه</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Monthly_Day" xml:space="preserve">  
+    <value>روز</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Monthly_Interval" xml:space="preserve">  
+    <value>ماه(ها)</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Monthly_RepeatEvery" xml:space="preserve">  
+    <value>هر</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Monthly_RepeatOn" xml:space="preserve">  
+    <value>تکرار در</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_OffsetPositions_First" xml:space="preserve">  
+    <value>اول</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_OffsetPositions_Fourth" xml:space="preserve">  
+    <value>چهارم</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_OffsetPositions_Last" xml:space="preserve">  
+    <value>آخرین</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_OffsetPositions_Second" xml:space="preserve">  
+    <value>دوم</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_OffsetPositions_Third" xml:space="preserve">  
+    <value>سوم</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Weekdays_Day" xml:space="preserve">  
+    <value>روز</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Weekdays_Weekday" xml:space="preserve">  
+    <value>روز هفته</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Weekdays_Weekend" xml:space="preserve">  
+    <value>روزهای تعطیل</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Weekly_Interval" xml:space="preserve">  
+    <value>هفته(ها)</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Weekly_RepeatEvery" xml:space="preserve">  
+    <value>هر</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Weekly_RepeatOn" xml:space="preserve">  
+    <value>تکرار در</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Yearly_Interval" xml:space="preserve">  
+    <value>سال(ها)</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Yearly_Of" xml:space="preserve">  
+    <value>از</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Yearly_RepeatEvery" xml:space="preserve">  
+    <value>هر</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Yearly_RepeatOn" xml:space="preserve">  
+    <value>تکرار در</value>  
+</data>
+<data name="Scheduler_Recurrence_EditRecurring" xml:space="preserve">  
+    <value>آیا می‌خواهید فقط این وقوع رویداد را ویرایش کنید یا کل سری را؟</value>  
+</data>  
+<data name="Scheduler_Recurrence_EditWindowOccurrence" xml:space="preserve">  
+    <value>ویرایش وقوع فعلی</value>  
+</data>  
+<data name="Scheduler_Recurrence_EditWindowSeries" xml:space="preserve">  
+    <value>ویرایش سری</value>  
+</data>  
+<data name="Scheduler_Recurrence_EditWindowTitle" xml:space="preserve">  
+    <value>ویرایش وقت تکراری</value>  
+</data>  
+<data name="Scheduler_Save" xml:space="preserve">  
+    <value>ذخیره</value>  
+</data>  
+<data name="Scheduler_ShowFullDay" xml:space="preserve">  
+    <value>نمایش کل روز</value>  
+</data>  
+<data name="Scheduler_ShowWorkDay" xml:space="preserve">  
+    <value>نمایش ساعت‌های کاری</value>  
+</data>  
+<data name="Scheduler_Timeline" xml:space="preserve">  
+    <value>خط زمان</value>  
+</data>  
+<data name="Scheduler_Today" xml:space="preserve">  
+    <value>امروز</value>  
+</data>  
+<data name="Scheduler_Week" xml:space="preserve">  
+    <value>هفته</value>  
+</data>  
+<data name="Signature_Clear" xml:space="preserve">  
+    <value>پاک کردن</value>  
+</data>  
+<data name="Signature_Maximize" xml:space="preserve">  
+    <value>بزرگنمایی</value>  
+</data>  
+<data name="Signature_Minimize" xml:space="preserve">  
+    <value>کوچکنمایی</value>  
+</data>  
+<data name="Slider_Decrease" xml:space="preserve">  
+    <value>کاهش</value>  
+</data>  
+<data name="Slider_Increase" xml:space="preserve">  
+    <value>افزایش</value>  
+</data>  
+<data name="SplitButton_Open" xml:space="preserve">  
+    <value>باز کردن</value>  
+</data>  
+<data name="Switch_OffLabel" xml:space="preserve">  
+    <value>خاموش</value>  
+</data>  
+<data name="Switch_OnLabel" xml:space="preserve">  
+    <value>روشن</value>  
+</data>  
+<data name="TabStrip_ShowNextTabs" xml:space="preserve">  
+    <value>نمایش برگه‌های بعدی</value>  
+</data>  
+<data name="TabStrip_ShowPreviousTabs" xml:space="preserve">  
+    <value>نمایش برگه‌های قبلی</value>  
+</data>  
+<data name="TimePicker_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="TimePicker_Day" xml:space="preserve">  
+    <value>روز</value>  
+</data>  
+<data name="TimePicker_DayPeriod" xml:space="preserve">  
+    <value>قبل از ظهر/بعد از ظهر</value>  
+</data>  
+<data name="TimePicker_Era" xml:space="preserve">  
+    <value>دوره</value>  
+</data>  
+<data name="TimePicker_Hour" xml:space="preserve">  
+    <value>ساعت</value>  
+</data>  
+<data name="TimePicker_Minute" xml:space="preserve">  
+    <value>دقیقه</value>  
+</data>  
+<data name="TimePicker_Month" xml:space="preserve">  
+    <value>ماه</value>  
+</data>  
+<data name="TimePicker_Now" xml:space="preserve">  
+    <value>اکنون</value>  
+</data>  
+<data name="TimePicker_Open" xml:space="preserve">  
+    <value>باز کردن</value>  
+</data>  
+<data name="TimePicker_Quarter" xml:space="preserve">  
+    <value>سه‌ماهه</value>  
+</data>  
+<data name="TimePicker_Second" xml:space="preserve">  
+    <value>ثانیه</value>  
+</data>  
+<data name="TimePicker_Set" xml:space="preserve">  
+    <value>تنظیم</value>  
+</data>  
+<data name="TimePicker_ToggleClock" xml:space="preserve">  
+    <value>تغییر ساعت</value>  
+</data>  
+<data name="TimePicker_WeekDay" xml:space="preserve">  
+    <value>روز هفته</value>  
+</data>  
+<data name="TimePicker_Year" xml:space="preserve">  
+    <value>سال</value>  
+</data>  
+<data name="TimePicker_Zone" xml:space="preserve">  
+    <value>منطقه</value>  
+</data>  
+<data name="TreeList_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="TreeList_ConfirmDeleteCancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="TreeList_ConfirmDeleteOk" xml:space="preserve">  
+    <value>تایید</value>  
+</data>  
+<data name="TreeList_ConfirmDeleteText" xml:space="preserve">  
+    <value>آیا مطمئن هستید که می‌خواهید این رکورد را حذف کنید؟</value>  
+</data>  
+<data name="TreeList_ConfirmDeleteTitle" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="TreeList_Create" xml:space="preserve">  
+    <value>اضافه کردن رکورد جدید</value>  
+</data>  
+<data name="TreeList_Delete" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="TreeList_DialogClose" xml:space="preserve">  
+    <value>بستن</value>  
+</data>  
+<data name="TreeList_Edit" xml:space="preserve">  
+    <value>ویرایش</value>  
+</data>  
+<data name="TreeList_NoRecords" xml:space="preserve">  
+    <value>رکوردی موجود نیست.</value>  
+</data>  
+<data name="TreeList_Search" xml:space="preserve">  
+    <value>جستجو...</value>  
+</data>  
+<data name="TreeList_SelectAllRows" xml:space="preserve">  
+    <value>انتخاب همه ردیف‌ها</value>  
+</data>  
+<data name="TreeList_SelectRow" xml:space="preserve">  
+    <value>انتخاب یک ردیف</value>  
+</data>  
+<data name="TreeList_SortedAscending" xml:space="preserve">  
+    <value>مرتب شده به ترتیب صعودی</value>  
+</data>
+<data name="TreeList_SortedDescending" xml:space="preserve">  
+    <value>مرتب شده به ترتیب نزولی</value>  
+</data>  
+<data name="TreeList_Update" xml:space="preserve">  
+    <value>به‌روزرسانی</value>  
+</data>  
+<data name="Upload_Cancel" xml:space="preserve">  
+    <value>لغو</value>  
+</data>  
+<data name="Upload_Clear" xml:space="preserve">  
+    <value>پاک کردن</value>  
+</data>  
+<data name="Upload_FileStatusFailed" xml:space="preserve">  
+    <value>بارگذاری پرونده با شکست مواجه شد.</value>  
+</data>  
+<data name="Upload_FileStatusUploaded" xml:space="preserve">  
+    <value>پرونده با موفقیت بارگذاری شد.</value>  
+</data>  
+<data name="Upload_HeaderStatusUploaded" xml:space="preserve">  
+    <value>انجام شد</value>  
+</data>  
+<data name="Upload_HeaderStatusUploading" xml:space="preserve">  
+    <value>در حال بارگذاری...</value>  
+</data>  
+<data name="Upload_InvalidFileExtension" xml:space="preserve">  
+    <value>نوع پرونده مجاز نیست.</value>  
+</data>  
+<data name="Upload_InvalidMaxFileSize" xml:space="preserve">  
+    <value>حجم پرونده خیلی بزرگ است.</value>  
+</data>  
+<data name="Upload_InvalidMinFileSize" xml:space="preserve">  
+    <value>حجم پرونده خیلی کوچک است.</value>  
+</data>  
+<data name="Upload_Remove" xml:space="preserve">  
+    <value>برای حذف، کلید Delete را فشار دهید</value>  
+</data>  
+<data name="Upload_Retry" xml:space="preserve">  
+    <value>دوباره امتحان کنید</value>  
+</data>  
+<data name="Upload_SelectFiles" xml:space="preserve">  
+    <value>انتخاب پرونده‌ها...</value>  
+</data>  
+<data name="Upload_UploadFiles" xml:space="preserve">  
+    <value>بارگذاری</value>  
+</data>  
+<data name="Validation_InvalidField" xml:space="preserve">  
+    <value>{0} معتبر نیست.</value>  
+</data>  
+<data name="Wizard_Done" xml:space="preserve">  
+    <value>انجام شد</value>  
+</data>  
+<data name="Wizard_Next" xml:space="preserve">  
+    <value>بعدی</value>  
+</data>  
+<data name="Wizard_Pager" xml:space="preserve">  
+    <value>مرحله {0} از {1}</value>  
+</data>  
+<data name="Wizard_Previous" xml:space="preserve">  
+    <value>قبلی</value>  
+</data>  
+<data name="Upload_UploadedState" xml:space="preserve">  
+    <value>بارگذاری شده</value>  
+</data>  
+<data name="Upload_SelectedState" xml:space="preserve">  
+    <value>انتخاب شده</value>  
+</data>  
+<data name="Upload_SelectedFilesAriaLabel" xml:space="preserve">  
+    <value>{0} پرونده(ها) {1}. برای جابجایی، کلید پیکان پایین را فشار دهید.</value>  
+</data>
+</root>
