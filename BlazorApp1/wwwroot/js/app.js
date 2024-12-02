@@ -1055,13 +1055,11 @@
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    Blazor.start().then(() => {
-        
+    Blazor.start().then(() => {       
         setTimeout(() => {
             try {
 
                 LoadAll();
-
                 var mybutton = document.getElementById("back-to-top");
                 function scrollFunction() {
                     100 < document.body.scrollTop || 100 < document.documentElement.scrollTop ? (mybutton.style.display = "block") : (mybutton.style.display = "none");
@@ -1077,33 +1075,6 @@ document.addEventListener("DOMContentLoaded", function () {
             } catch (error) {
                 console.error(error);
             }
-        }, 200); 
+        }, 100); 
     });
 });  
-
-//function changeLanguage(a) {
-//    const culture = a == "fa" ? "fa-IR"
-//        : a == "ar" ? "ar-AE"
-//            : "en-US";
-//    DotNet.invokeMethod('CultureService', 'ChangeLanguageJs', culture);
-//}
-//function changeLanguage(a) {
-//    debugger;
-//    const url = '/Culture/SetCulture';
-//    const redirectUri = '/'
-//    var culture = a == "fa" ? "fa-IR"
-//        : a == "ar" ? "ar-AE"
-//            : "en-US";
-//    // ارسال درخواست به کنترلر
-//    fetch(`${url}?culture=${culture}&redirectUri=${redirectUri}`, { method: 'GET' })
-//        .then(response => {
-//            if (!response.ok) {
-//                throw new Error('Network response was not ok');
-//            }
-//            else {
-//                window.location.reload();
-//            }
-//        });
-//}
-
-

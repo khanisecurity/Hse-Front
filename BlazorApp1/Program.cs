@@ -7,6 +7,8 @@ using System.Globalization;
 using Telerik.Blazor.Services;
 using BlazorApp1.Services;
 using Microsoft.JSInterop;
+using MudBlazor;
+using MudBlazor.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#layout-wrapper");
@@ -17,6 +19,8 @@ builder.Services.AddSingleton<ApplicationDbContext>();
 
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 builder.Services.AddTelerikBlazor();
+builder.Services.AddMudServices();
+
 
 // register a custom localizer for the Telerik components, after registering the Telerik services
 builder.Services.AddSingleton(typeof(ITelerikStringLocalizer), typeof(ResxLocalizer));
@@ -33,5 +37,6 @@ if (result == null)
 
 CultureInfo.DefaultThreadCurrentCulture = culture;
 CultureInfo.DefaultThreadCurrentUICulture = culture;
+
 #endregion
 await host.RunAsync();

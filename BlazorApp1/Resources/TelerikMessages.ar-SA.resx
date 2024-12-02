@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+ <data name="Aggregate_Average" xml:space="preserve">  
+    <value>متوسط</value>  
+</data>  
+<data name="Aggregate_Count" xml:space="preserve">  
+    <value>عدد</value>  
+</data>  
+<data name="Aggregate_Max" xml:space="preserve">  
+    <value>أقصى</value>  
+</data>  
+<data name="Aggregate_Min" xml:space="preserve">  
+    <value>أدنى</value>  
+</data>  
+<data name="Aggregate_Sum" xml:space="preserve">  
+    <value>مجموع</value>  
+</data>  
+<data name="AutoComplete_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="AutoComplete_Clear" xml:space="preserve">  
+    <value>مسح</value>  
+</data>  
+<data name="AutoComplete_NoData" xml:space="preserve">  
+    <value>بدون بيانات</value>  
+</data>  
+<data name="Calendar_Choose_Decade" xml:space="preserve">  
+    <value>اختر عقداً</value>  
+</data>  
+<data name="Calendar_Choose_Month" xml:space="preserve">  
+    <value>اختر شهراً</value>  
+</data>  
+<data name="Calendar_Choose_Year" xml:space="preserve">  
+    <value>اختر سنة</value>  
+</data>  
+<data name="Calendar_GoToNext" xml:space="preserve">  
+    <value>انتقل إلى الدورة التالية</value>  
+</data>  
+<data name="Calendar_GoToPrevious" xml:space="preserve">  
+    <value>انتقل إلى الدورة السابقة</value>  
+</data>  
+<data name="Calendar_Today" xml:space="preserve">  
+    <value>اليوم</value>  
+</data>  
+<data name="Carousel_Next" xml:space="preserve">  
+    <value>التالي</value>  
+</data>  
+<data name="Carousel_Previous" xml:space="preserve">  
+    <value>السابق</value>  
+</data>  
+<data name="ColorAlpha_Label" xml:space="preserve">  
+    <value>ألفا</value>  
+</data>  
+<data name="ColorBlue_Label" xml:space="preserve">  
+    <value>أزرق</value>  
+</data>  
+<data name="ColorGradient_AlphaSlider_Label" xml:space="preserve">  
+    <value>قيمة شريط التمرير ألفا</value>  
+</data>  
+<data name="ColorGradient_HueSlider_Label" xml:space="preserve">  
+    <value>قيمة شريط التمرير اللون</value>  
+</data>  
+
+<data name="ColorGradient_ToggleButton" xml:space="preserve">  
+    <value>تغيير التنسيق.</value>  
+</data>  
+<data name="ColorGreen_Label" xml:space="preserve">  
+    <value>أ</value>  
+</data>  
+<data name="ColorHex_Label" xml:space="preserve">  
+    <value>HEX</value>  
+</data>  
+<data name="ColorHex_Placeholder" xml:space="preserve">  
+    <value>لون هكس</value>  
+</data>  
+<data name="ColorPicker_Apply" xml:space="preserve">  
+    <value>تطبيق</value>  
+</data>  
+<data name="ColorPicker_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="ColorPicker_ClearTitle" xml:space="preserve">  
+    <value>مسح</value>  
+</data>  
+<data name="ColorPicker_CurrentColor" xml:space="preserve">  
+    <value>اللون الحالي</value>  
+</data>  
+<data name="ColorPicker_GradientViewTitle" xml:space="preserve">  
+    <value>اختر عرض التدرج</value>  
+</data>  
+<data name="ColorPicker_Open" xml:space="preserve">  
+    <value>فتح</value>  
+</data>  
+<data name="ColorPicker_PaletteViewTitle" xml:space="preserve">  
+    <value>اختر عرض اللوحة</value>  
+</data>  
+<data name="ColorPicker_PreviewColor" xml:space="preserve">  
+    <value>معاينة اللون</value>  
+</data>  
+<data name="ColorRed_Label" xml:space="preserve">  
+    <value>أ</value>  
+</data>  
+<data name="ColumnMenu_Apply" xml:space="preserve">  
+    <value>تطبيق</value>  
+</data>  
+<data name="ColumnMenu_ColumnMenu" xml:space="preserve">  
+    <value>قائمة الأعمدة</value>  
+</data>  
+<data name="ColumnMenu_Columns" xml:space="preserve">  
+    <value>الأعمدة</value>  
+</data>  
+<data name="ColumnMenu_Lock" xml:space="preserve">  
+    <value>قفل</value>  
+</data>  
+<data name="ColumnMenu_Reset" xml:space="preserve">  
+    <value>إعادة تعيين</value>  
+</data>
+
+<data name="ColumnMenu_SortAscending" xml:space="preserve">  
+    <value>ترتيب تصاعدي</value>  
+</data>  
+<data name="ColumnMenu_SortDescending" xml:space="preserve">  
+    <value>ترتيب تنازلي</value>  
+</data>  
+<data name="ColumnMenu_Unlock" xml:space="preserve">  
+    <value>فتح القفل</value>  
+</data>  
+<data name="ComboBox_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="ComboBox_Clear" xml:space="preserve">  
+    <value>مسح</value>  
+</data>  
+<data name="ComboBox_NoData" xml:space="preserve">  
+    <value>بدون بيانات</value>  
+</data>  
+<data name="ComboBox_Open" xml:space="preserve">  
+    <value>فتح</value>  
+</data>  
+<data name="DateInput_ParsingErrorMessage" xml:space="preserve">  
+    <value>تنسيق التاريخ غير قابل للتحليل. يرجى إدخال تاريخ صحيح.</value>  
+</data>  
+<data name="DateInput_ValidationErrorMessage" xml:space="preserve">  
+    <value>التاريخ غير صالح.</value>  
+</data>  
+<data name="DatePicker_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="DatePicker_Open" xml:space="preserve">  
+    <value>فتح</value>  
+</data>  
+<data name="DatePicker_SetDate" xml:space="preserve">  
+    <value>تعيين التاريخ</value>  
+</data>  
+<data name="DateRangePicker_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="DateRangePicker_ConfirmSelection" xml:space="preserve">  
+    <value>تأكيد الاختيار</value>  
+</data>  
+<data name="DateRangePicker_End" xml:space="preserve">  
+    <value>نهاية</value>  
+</data>  
+<data name="DateRangePicker_Start" xml:space="preserve">  
+    <value>بداية</value>  
+</data>  
+<data name="DateTimePicker_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="DateTimePicker_Date" xml:space="preserve">  
+    <value>تاريخ</value>  
+</data>  
+<data name="DateTimePicker_Open" xml:space="preserve">  
+    <value>فتح</value>  
+</data>  
+<data name="DateTimePicker_Set" xml:space="preserve">  
+    <value>تعيين</value>  
+</data>  
+<data name="DateTimePicker_Time" xml:space="preserve">  
+    <value>وقت</value>  
+</data>  
+<data name="Dialog_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="Dialog_Close" xml:space="preserve">  
+    <value>إغلاق</value>  
+</data>  
+<data name="Dialog_Ok" xml:space="preserve">  
+    <value>موافق</value>  
+</data>  
+<data name="DropDownList_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="DropDownList_NoData" xml:space="preserve">  
+    <value>بدون بيانات</value>  
+</data>  
+<data name="DropDownList_Open" xml:space="preserve">  
+    <value>فتح</value>  
+</data>  
+<data name="Editor_AddColumnAfter" xml:space="preserve">  
+    <value>إضافة عمود إلى اليمين</value>  
+</data>  
+<data name="Editor_AddColumnBefore" xml:space="preserve">  
+    <value>إضافة عمود إلى اليسار</value>  
+</data>  
+<data name="Editor_AddRowAfter" xml:space="preserve">  
+    <value>إضافة صف أدناه</value>  
+</data>  
+<data name="Editor_AddRowBefore" xml:space="preserve">  
+    <value>إضافة صف أعلاه</value>  
+</data>  
+<data name="Editor_AddRowBelow" xml:space="preserve">  
+    <value>إضافة صف أدناه</value>  
+</data> 
+
+<data name="Editor_BackColor" xml:space="preserve">  
+    <value>لون الخلفية</value>  
+</data>  
+<data name="Editor_Bold" xml:space="preserve">  
+    <value>عريض</value>  
+</data>  
+<data name="Editor_CreateLink" xml:space="preserve">  
+    <value>إدراج رابط</value>  
+</data>  
+<data name="Editor_CreateTable" xml:space="preserve">  
+    <value>إنشاء جدول</value>  
+</data>  
+<data name="Editor_CreateTablePopup" xml:space="preserve">  
+    <value>إنشاء جدول {0}</value>  
+</data>  
+<data name="Editor_DeleteColumn" xml:space="preserve">  
+    <value>حذف عمود</value>  
+</data>  
+<data name="Editor_DeleteRow" xml:space="preserve">  
+    <value>حذف صف</value>  
+</data>  
+<data name="Editor_DialogCancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="Editor_DialogClose" xml:space="preserve">  
+    <value>إغلاق</value>  
+</data>  
+<data name="Editor_DialogInsert" xml:space="preserve">  
+    <value>إدراج</value>  
+</data>  
+<data name="Editor_DialogUpdate" xml:space="preserve">  
+    <value>تحديث</value>  
+</data>  
+<data name="Editor_FontFamily" xml:space="preserve">  
+    <value>نوع الخط</value>  
+</data>  
+<data name="Editor_FontSize" xml:space="preserve">  
+    <value>حجم الخط</value>  
+</data>  
+<data name="Editor_ForeColor" xml:space="preserve">  
+    <value>لون</value>  
+</data>  
+<data name="Editor_Format" xml:space="preserve">  
+    <value>تنسيق</value>  
+</data>  
+<data name="Editor_ImageAltText" xml:space="preserve">  
+    <value>نص بديل:</value>  
+</data>  
+<data name="Editor_ImageHeight" xml:space="preserve">  
+    <value>الارتفاع:</value>  
+</data>  
+<data name="Editor_ImageWebAddress" xml:space="preserve">  
+    <value>عنوان ويب:</value>  
+</data>  
+<data name="Editor_ImageWidth" xml:space="preserve">  
+    <value>العرض:</value>  
+</data>  
+<data name="Editor_Indent" xml:space="preserve">  
+    <value>تراجع</value>  
+</data>  
+<data name="Editor_InsertFile" xml:space="preserve">  
+    <value>إدراج ملف</value>  
+</data>  
+<data name="Editor_InsertHtml" xml:space="preserve">  
+    <value>إدراج HTML</value>  
+</data>  
+<data name="Editor_InsertImage" xml:space="preserve">  
+    <value>إدراج صورة</value>  
+</data>  
+<data name="Editor_InsertOrderedList" xml:space="preserve">  
+    <value>إدراج قائمة مرقمة</value>  
+</data>  
+<data name="Editor_InsertUnorderedList" xml:space="preserve">  
+    <value>إدراج قائمة غير مرقمة</value>  
+</data>  
+<data name="Editor_Italic" xml:space="preserve">  
+    <value>مائل</value>  
+</data>  
+<data name="Editor_LinkOpenNewWindow" xml:space="preserve">  
+    <value>فتح في نافذة جديدة</value>  
+</data>  
+<data name="Editor_LinkText" xml:space="preserve">  
+    <value>النص</value>  
+</data>  
+<data name="Editor_LinkTitle" xml:space="preserve">  
+    <value>العنوان:</value>  
+</data>  
+<data name="Editor_LinkWebAddress" xml:space="preserve">  
+    <value>عنوان ويب:</value>  
+</data>  
+<data name="Editor_MergeCells" xml:space="preserve">  
+    <value>دمج الخلايا</value>  
+</data>  
+<data name="Editor_Outdent" xml:space="preserve">  
+    <value>تقليل التراجع</value>  
+</data>  
+<data name="Editor_Redo" xml:space="preserve">  
+    <value>إعادة</value>  
+</data>  
+<data name="Editor_SetHtml" xml:space="preserve">  
+    <value>عرض HTML</value>  
+</data>  
+<data name="Editor_SplitCell" xml:space="preserve">  
+    <value>تقسيم الخلية</value>  
+</data>  
+<data name="Editor_Strikethrough" xml:space="preserve">  
+    <value>يتوسطه خط</value>  
+</data>  
+<data name="Editor_Subscript" xml:space="preserve">  
+    <value>كتابة تحت النص</value>  
+</data>  
+<data name="Editor_Superscript" xml:space="preserve">  
+    <value>كتابة فوق النص</value>  
+</data>  
+<data name="Editor_Underline" xml:space="preserve">  
+    <value>تسطير</value>  
+</data>  
+<data name="Editor_Undo" xml:space="preserve">  
+    <value>تراجع</value>  
+</data>  
+<data name="Editor_Unlink" xml:space="preserve">  
+    <value>إزالة الرابط</value>  
+</data>
+
+<data name="FileManager_ConfirmDeleteCancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="FileManager_ConfirmDeleteOk" xml:space="preserve">  
+    <value>تأكيد</value>  
+</data>  
+<data name="FileManager_ConfirmDeleteText" xml:space="preserve">  
+    <value>هل أنت متأكد أنك تريد حذف الملف(ات)؟</value>  
+</data>  
+<data name="FileManager_ConfirmDeleteTitle" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="FileManager_ContextMenu_Delete" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="FileManager_ContextMenu_Download" xml:space="preserve">  
+    <value>تحميل</value>  
+</data>  
+<data name="FileManager_ContextMenu_Rename" xml:space="preserve">  
+    <value>إعادة تسمية</value>  
+</data>  
+<data name="FileManager_DetailsPane_DateCreated" xml:space="preserve">  
+    <value>تاريخ الإنشاء</value>  
+</data>  
+<data name="FileManager_DetailsPane_DateModified" xml:space="preserve">  
+    <value>تاريخ التعديل</value>  
+</data>  
+<data name="FileManager_DetailsPane_NoFileSelected" xml:space="preserve">  
+    <value>لا يوجد ملف محدد</value>  
+</data>  
+<data name="FileManager_DetailsPane_Size" xml:space="preserve">  
+    <value>الحجم</value>  
+</data>  
+<data name="FileManager_DetailsPane_Type" xml:space="preserve">  
+    <value>النوع</value>  
+</data>  
+<data name="FileManager_FileView_Items" xml:space="preserve">  
+    <value>العناصر</value>  
+</data>  
+<data name="FileManager_Grid_DateCreatedColumnTitle" xml:space="preserve">  
+    <value>تاريخ الإنشاء</value>  
+</data>  
+<data name="FileManager_Grid_FileSizeColumnTitle" xml:space="preserve">  
+    <value>حجم الملف</value>  
+</data>  
+<data name="FileManager_Grid_NameColumnTitle" xml:space="preserve">  
+    <value>الاسم</value>  
+</data>  
+<data name="FileManager_SearchBox_Placeholder" xml:space="preserve">  
+    <value>بحث</value>  
+</data>  
+<data name="FileManager_SearchBox_Title" xml:space="preserve">  
+    <value>بحث</value>  
+</data>  
+<data name="FileManager_ToolBar_CreateNewFolder" xml:space="preserve">  
+    <value>مجلد جديد</value>  
+</data>  
+<data name="FileManager_ToolBar_SortBy" xml:space="preserve">  
+    <value>ترتيب بواسطة</value>  
+</data>  
+<data name="FileManager_ToolBar_SortByDateCreated" xml:space="preserve">  
+    <value>تاريخ الإنشاء</value>  
+</data>  
+<data name="FileManager_ToolBar_SortByDateModified" xml:space="preserve">  
+    <value>تاريخ التعديل</value>  
+</data>  
+<data name="FileManager_ToolBar_SortByName" xml:space="preserve">  
+    <value>الاسم</value>  
+</data>  
+<data name="FileManager_ToolBar_SortBySize" xml:space="preserve">  
+    <value>الحجم</value>  
+</data>  
+<data name="FileManager_ToolBar_SortByType" xml:space="preserve">  
+    <value>النوع</value>  
+</data>  
+<data name="FileManager_ToolBar_Upload" xml:space="preserve">  
+    <value>رفع</value>  
+</data>  
+<data name="FileManager_ToolBar_ViewDetails" xml:space="preserve">  
+    <value>عرض التفاصيل</value>  
+</data>  
+<data name="FileManager_UploadDialogCancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="FileManager_UploadDialogOk" xml:space="preserve">  
+    <value>تأكيد</value>  
+</data>  
+<data name="FileManager_UploadDialogTitle" xml:space="preserve">  
+    <value>تحميل الملفات</value>  
+</data>  
+<data name="FileSelect_InvalidFileExtension" xml:space="preserve">  
+    <value>نوع الملف غير مسموح به.</value>  
+</data>  
+<data name="FileSelect_InvalidMaxFileSize" xml:space="preserve">  
+    <value>حجم الملف كبير جداً.</value>  
+</data>  
+<data name="FileSelect_InvalidMinFileSize" xml:space="preserve">  
+    <value>حجم الملف صغير جداً.</value>  
+</data>  
+<data name="FileSelect_Remove" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="FileSelect_SelectFiles" xml:space="preserve">  
+    <value>اختر الملفات...</value>  
+</data>  
+<data name="Filter_AddExpression" xml:space="preserve">  
+    <value>إضافة تعبير</value>  
+</data>  
+<data name="Filter_AddGroup" xml:space="preserve">  
+    <value>إضافة مجموعة</value>  
+</data>  
+<data name="Filter_AdditionalOperator" xml:space="preserve">  
+    <value>عملية إضافية</value>  
+</data>  
+<data name="Filter_AdditionalValue" xml:space="preserve">  
+    <value>قيمة إضافية</value>  
+</data>  
+<data name="Filter_All" xml:space="preserve">  
+    <value>(الجميع)</value>  
+</data>  
+<data name="Filter_And" xml:space="preserve">  
+    <value>و</value>  
+</data>  
+<data name="Filter_BooleanIsEqualTo" xml:space="preserve">  
+    <value>يساوي</value>  
+</data>  
+<data name="Filter_BooleanIsNotEqualTo" xml:space="preserve">  
+    <value>لا يساوي</value>  
+</data>  
+<data name="Filter_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="Filter_Clear" xml:space="preserve">  
+    <value>مسح</value>  
+</data>  
+<data name="Filter_DateIsEqualTo" xml:space="preserve">  
+    <value>يساوي</value>  
+</data>  
+<data name="Filter_DateIsGreaterThan" xml:space="preserve">  
+    <value>بعد</value>  
+</data>  
+<data name="Filter_DateIsGreaterThanOrEqualTo" xml:space="preserve">  
+    <value>بعد أو يساوي</value>  
+</data>  
+<data name="Filter_DateIsLessThan" xml:space="preserve">  
+    <value>قبل</value>  
+</data>  
+<data name="Filter_DateIsLessThanOrEqualTo" xml:space="preserve">  
+    <value>قبل أو يساوي</value>  
+</data>  
+<data name="Filter_DateIsNotEqualTo" xml:space="preserve">  
+    <value>لا يساوي</value>  
+</data>  
+<data name="Filter_DateIsNotNull" xml:space="preserve">  
+    <value>ليس فارغاً</value>  
+</data>  
+<data name="Filter_DateIsNull" xml:space="preserve">  
+    <value>فارغ</value>  
+</data>  
+<data name="Filter_EnumIsEqualTo" xml:space="preserve">  
+    <value>يساوي</value>  
+</data>  
+<data name="Filter_EnumIsNotEqualTo" xml:space="preserve">  
+    <value>لا يساوي</value>  
+</data>  
+<data name="Filter_EnumIsNotNull" xml:space="preserve">  
+    <value>ليس فارغاً</value>  
+</data>  
+<data name="Filter_EnumIsNull" xml:space="preserve">  
+    <value>فارغ</value>  
+</data>  
+<data name="Filter_Filter" xml:space="preserve">  
+    <value>تصفية</value>  
+</data>  
+<data name="Filter_FilterLabel" xml:space="preserve">  
+    <value>تصفية</value>  
+</data>  
+<data name="Filter_FilterSettings" xml:space="preserve">  
+    <value>إعدادات التصفية</value>  
+</data>  
+<data name="Filter_Info" xml:space="preserve">  
+    <value>عرض السجلات التي قيمتها</value>  
+</data>  
+<data name="Filter_IsFalse" xml:space="preserve">  
+    <value>كاذب</value>  
+</data>  
+<data name="Filter_IsTrue" xml:space="preserve">  
+    <value>صحيح</value>  
+</data>  
+<data name="Filter_NoData" xml:space="preserve">  
+    <value>لا توجد بيانات</value>  
+</data>  
+<data name="Filter_NumberIsEqualTo" xml:space="preserve">  
+    <value>يساوي</value>  
+</data>
+<data name="Filter_NumberIsGreaterThan" xml:space="preserve">  
+    <value>أكبر من</value>  
+</data>  
+<data name="Filter_NumberIsGreaterThanOrEqualTo" xml:space="preserve">  
+    <value>أكبر من أو يساوي</value>  
+</data>  
+<data name="Filter_NumberIsLessThan" xml:space="preserve">  
+    <value>أقل من</value>  
+</data>  
+<data name="Filter_NumberIsLessThanOrEqualTo" xml:space="preserve">  
+    <value>أقل من أو يساوي</value>  
+</data>  
+<data name="Filter_NumberIsNotEqualTo" xml:space="preserve">  
+    <value>لا يساوي</value>  
+</data>  
+<data name="Filter_NumberIsNotNull" xml:space="preserve">  
+    <value>ليس فارغاً</value>  
+</data>  
+<data name="Filter_NumberIsNull" xml:space="preserve">  
+    <value>فارغ</value>  
+</data>  
+<data name="Filter_Operator" xml:space="preserve">  
+    <value>عامل</value>  
+</data>  
+<data name="Filter_Or" xml:space="preserve">  
+    <value>أو</value>  
+</data>  
+<data name="Filter_Remove" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="Filter_Search" xml:space="preserve">  
+    <value>بحث</value>  
+</data>  
+<data name="Filter_SelectAll" xml:space="preserve">  
+    <value>تحديد الكل</value>  
+</data>  
+<data name="Filter_SelectValue" xml:space="preserve">  
+    <value>-اختر قيمة-</value>  
+</data>  
+<data name="Filter_StringContains" xml:space="preserve">  
+    <value>يتضمن</value>  
+</data>  
+<data name="Filter_StringDoesNotContain" xml:space="preserve">  
+    <value>لا يتضمن</value>  
+</data>  
+<data name="Filter_StringEndsWith" xml:space="preserve">  
+    <value>ينتهي بـ</value>  
+</data>  
+<data name="Filter_StringIsEmpty" xml:space="preserve">  
+    <value>فارغ</value>  
+</data>  
+<data name="Filter_StringIsEqualTo" xml:space="preserve">  
+    <value>يساوي</value>  
+</data>  
+<data name="Filter_StringIsNotEmpty" xml:space="preserve">  
+    <value>ليس فارغاً</value>  
+</data>  
+<data name="Filter_StringIsNotEqualTo" xml:space="preserve">  
+    <value>لا يساوي</value>  
+</data>  
+<data name="Filter_StringIsNotNull" xml:space="preserve">  
+    <value>ليس فارغاً</value>  
+</data>  
+<data name="Filter_StringIsNotNullOrEmpty" xml:space="preserve">  
+    <value>يمتلك قيمة</value>  
+</data>  
+<data name="Filter_StringIsNull" xml:space="preserve">  
+    <value>فارغ</value>  
+</data>  
+<data name="Filter_StringIsNullOrEmpty" xml:space="preserve">  
+    <value>بدون قيمة</value>  
+</data>  
+<data name="Filter_StringStartsWith" xml:space="preserve">  
+    <value>يبدأ بـ</value>  
+</data>  
+<data name="Filter_Value" xml:space="preserve">  
+    <value>قيمة</value>  
+</data>  
+<data name="Form_Clear" xml:space="preserve">  
+    <value>مسح</value>  
+</data>  
+<data name="Form_Submit" xml:space="preserve">  
+    <value>إرسال</value>  
+</data>  
+<data name="Gantt_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="Gantt_Day" xml:space="preserve">  
+    <value>يوم</value>  
+</data>  
+<data name="Gantt_Delete" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="Gantt_DialogClose" xml:space="preserve">  
+    <value>إغلاق</value>  
+</data>  
+<data name="Gantt_Editor_EditorTitle" xml:space="preserve">  
+    <value>المهمة</value>  
+</data>  
+<data name="Gantt_Editor_End" xml:space="preserve">  
+    <value>نهاية</value>  
+</data>  
+<data name="Gantt_Editor_EndTimeValueValidationMessage" xml:space="preserve">  
+    <value>يجب أن يكون وقت النهاية بعد وقت البدء.</value>  
+</data>  
+<data name="Gantt_Editor_PercentComplete" xml:space="preserve">  
+    <value>مكتمل</value>  
+</data>  
+<data name="Gantt_Editor_Start" xml:space="preserve">  
+    <value>بداية</value>  
+</data>  
+<data name="Gantt_Editor_StartTimeValueValidationMessage" xml:space="preserve">  
+    <value>يجب أن يكون وقت البدء قبل وقت النهاية.</value>  
+</data>  
+
+<data name="Gantt_Editor_Title" xml:space="preserve">  
+    <value>عنوان</value>  
+</data>  
+<data name="Gantt_Editor_TitleRequiredValidationMessage" xml:space="preserve">  
+    <value>العنوان مطلوب.</value>  
+</data>  
+<data name="Gantt_Month" xml:space="preserve">  
+    <value>شهر</value>  
+</data>  
+<data name="Gantt_Save" xml:space="preserve">  
+    <value>حفظ</value>  
+</data>  
+<data name="Gantt_Week" xml:space="preserve">  
+    <value>أسبوع</value>  
+</data>  
+<data name="Gantt_Year" xml:space="preserve">  
+    <value>عام</value>  
+</data>  
+<data name="Grid_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="Grid_CancelChanges" xml:space="preserve">  
+    <value>إلغاء التغييرات</value>  
+</data>  
+<data name="Grid_CancelDelete" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="Grid_CheckAll" xml:space="preserve">  
+    <value>تحديد الكل</value>  
+</data>  
+<data name="Grid_Columns" xml:space="preserve">  
+    <value>الأعمدة</value>  
+</data>  
+<data name="Grid_ColumnSettings" xml:space="preserve">  
+    <value>إعدادات العمود</value>  
+</data>  
+<data name="Grid_Confirmation" xml:space="preserve">  
+    <value>هل أنت متأكد أنك تريد حذف هذا السجل؟</value>  
+</data>  
+<data name="Grid_ConfirmDelete" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="Grid_ConfirmDeleteCancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="Grid_ConfirmDeleteOk" xml:space="preserve">  
+    <value>حسناً</value>  
+</data>  
+<data name="Grid_ConfirmDeleteText" xml:space="preserve">  
+    <value>هل أنت متأكد أنك تريد حذف هذا السجل؟</value>  
+</data>  
+<data name="Grid_ConfirmDeleteTitle" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="Grid_Create" xml:space="preserve">  
+    <value>إضافة سجل جديد</value>  
+</data>  
+<data name="Grid_Csv" xml:space="preserve">  
+    <value>تصدير إلى CSV</value>  
+</data>  
+<data name="Grid_DataTable" xml:space="preserve">  
+    <value>جدول البيانات</value>  
+</data>  
+<data name="Grid_Delete" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="Grid_DialogClose" xml:space="preserve">  
+    <value>إغلاق</value>  
+</data>  
+<data name="Grid_Done" xml:space="preserve">  
+    <value>تم</value>  
+</data>  
+<data name="Grid_DragItems" xml:space="preserve">  
+    <value>العناصر المحددة</value>  
+</data>  
+<data name="Grid_DragRowLabel" xml:space="preserve">  
+    <value>سحب الصف</value>  
+</data>  
+<data name="Grid_Edit" xml:space="preserve">  
+    <value>تعديل</value>  
+</data>  
+<data name="Grid_Excel" xml:space="preserve">  
+    <value>تصدير إلى Excel</value>  
+</data>  
+<data name="Grid_Filter" xml:space="preserve">  
+    <value>تصفية</value>  
+</data>  
+<data name="Grid_FilterMenuSettings" xml:space="preserve">  
+    <value>إعدادات قائمة تصفية العمود {0}</value>  
+</data>  
+<data name="Grid_FilterRowLabel" xml:space="preserve">  
+    <value>تصفية {0}</value>  
+</data>  
+<data name="Grid_GroupHeaderLabel" xml:space="preserve">  
+    <value>عنوان مجموعة الجدول</value>  
+</data>  
+<data name="Grid_Lock" xml:space="preserve">  
+    <value>قفل</value>  
+</data>  
+<data name="Grid_NoRecords" xml:space="preserve">  
+    <value>لا توجد سجلات متاحة</value>  
+</data>  
+<data name="Grid_Remove" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="Grid_SaveChanges" xml:space="preserve">  
+    <value>حفظ التغييرات</value>  
+</data>  
+<data name="Grid_Search" xml:space="preserve">  
+    <value>بحث...</value>  
+</data>  
+<data name="Grid_Select" xml:space="preserve">  
+    <value>تحديد</value>  
+</data>  
+<data name="Grid_SelectAllRows" xml:space="preserve">  
+    <value>تحديد جميع الصفوف</value>  
+</data>  
+<data name="Grid_SelectRow" xml:space="preserve">  
+    <value>تحديد صف واحد</value>  
+</data>  
+<data name="Grid_SortAscending" xml:space="preserve">  
+    <value>ترتيب تصاعدي</value>  
+</data>  
+<data name="Grid_SortDescending" xml:space="preserve">  
+    <value>ترتيب تنازلي</value>  
+</data>  
+<data name="Grid_SortedAscending" xml:space="preserve">  
+    <value>مرتبة تصاعدياً</value>  
+</data>  
+<data name="Grid_SortedDescending" xml:space="preserve">  
+    <value>مرتبة تنازلياً</value>  
+</data>  
+<data name="Grid_ToolbarLabel" xml:space="preserve">  
+    <value>شريط أدوات الجدول</value>  
+</data>  
+<data name="Grid_Unlock" xml:space="preserve">  
+    <value>إلغاء القفل</value>  
+</data>  
+<data name="Grid_Update" xml:space="preserve">  
+    <value>تحديث</value>  
+</data>  
+<data name="Group_Empty" xml:space="preserve">  
+    <value>اسحب عنوان العمود وأفلته هنا لتجميع حسب هذا العمود</value>  
+</data>  
+<data name="MultiSelect_Apply" xml:space="preserve">  
+    <value>تطبيق</value>  
+</data>  
+<data name="MultiSelect_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="MultiSelect_Clear" xml:space="preserve">  
+    <value>مسح</value>  
+</data>  
+<data name="MultiSelect_NoData" xml:space="preserve">  
+    <value>لا توجد بيانات</value>  
+</data>  
+<data name="NumericTextBox_DecreaseValue" xml:space="preserve">  
+    <value>تقليل القيمة</value>  
+</data>  
+<data name="NumericTextBox_IncreaseValue" xml:space="preserve">  
+    <value>زيادة القيمة</value>  
+</data>  
+<data name="Optional_Label" xml:space="preserve">  
+    <value>اختياري</value>  
+</data>  
+<data name="Pager_AllPages" xml:space="preserve">  
+    <value>الجميع</value>  
+</data>  
+<data name="Pager_Display" xml:space="preserve">  
+    <value>{0} - {1} من {2} عنصر</value>  
+</data>  
+<data name="Pager_Empty" xml:space="preserve">  
+    <value>لا توجد عناصر للعرض</value>  
+</data>  
+<data name="Pager_First" xml:space="preserve">  
+    <value>انتقل إلى الصفحة الأولى</value>  
+</data>  
+<data name="Pager_ItemsPerPage" xml:space="preserve">  
+    <value>عنصر في كل صفحة</value>  
+</data>  
+<data name="Pager_Last" xml:space="preserve">  
+    <value>انتقل إلى الصفحة الأخيرة</value>  
+</data>  
+<data name="Pager_MorePages" xml:space="preserve">  
+    <value>صفحات إضافية</value>  
+</data>  
+<data name="Pager_Next" xml:space="preserve">  
+    <value>انتقل إلى الصفحة التالية</value>  
+</data>  
+<data name="Pager_Of" xml:space="preserve">  
+    <value>من {0}</value>  
+</data>  
+<data name="Pager_Page" xml:space="preserve">  
+    <value>صفحة</value>  
+</data>  
+<data name="Pager_PageDisplay" xml:space="preserve">  
+    <value>صفحة {0}</value>  
+</data>
+<data name="Pager_PageInputLabel" xml:space="preserve">  
+    <value>اختر صفحة</value>  
+</data>  
+<data name="Pager_Previous" xml:space="preserve">  
+    <value>انتقل إلى الصفحة السابقة</value>  
+</data>  
+<data name="Pager_Refresh" xml:space="preserve">  
+    <value>إعادة تحميل</value>  
+</data>  
+<data name="Pager_WrapperLabel" xml:space="preserve">  
+    <value>تنقل الصفحات، الصفحة {0} من {1}</value>  
+</data>  
+<data name="PdfViewer_Search_Close" xml:space="preserve">  
+    <value>إغلاق</value>  
+</data>  
+<data name="PdfViewer_Search_MatchCase" xml:space="preserve">  
+    <value>مراعاة حالة الأحرف</value>  
+</data>  
+<data name="PdfViewer_Search_MatchesOf" xml:space="preserve">  
+    <value>من</value>  
+</data>  
+<data name="PdfViewer_Search_NextMatch" xml:space="preserve">  
+    <value>التطابق التالي</value>  
+</data>  
+<data name="PdfViewer_Search_Placeholder" xml:space="preserve">  
+    <value>بحث</value>  
+</data>  
+<data name="PdfViewer_Search_PreviousMatch" xml:space="preserve">  
+    <value>التطابق السابق</value>  
+</data>  
+<data name="PdfViewer_ToolBar_Download" xml:space="preserve">  
+    <value>تنزيل</value>  
+</data>  
+<data name="PdfViewer_ToolBar_Open" xml:space="preserve">  
+    <value>فتح</value>  
+</data>  
+<data name="PdfViewer_ToolBar_Panning" xml:space="preserve">  
+    <value>تفعيل الحركة</value>  
+</data>  
+<data name="PdfViewer_ToolBar_Print" xml:space="preserve">  
+    <value>طباعة</value>  
+</data>  
+<data name="PdfViewer_ToolBar_Search" xml:space="preserve">  
+    <value>بحث</value>  
+</data>  
+<data name="PdfViewer_ToolBar_TextSelection" xml:space="preserve">  
+    <value>تفعيل التحديد</value>  
+</data>  
+<data name="PdfViewer_ToolBar_ZoomActualWidth" xml:space="preserve">  
+    <value>العرض الحقيقي</value>  
+</data>  
+<data name="PdfViewer_ToolBar_ZoomFitToPage" xml:space="preserve">  
+    <value>تناسب مع الصفحة</value>  
+</data>  
+<data name="PdfViewer_ToolBar_ZoomFitToWidth" xml:space="preserve">  
+    <value>تناسب مع العرض</value>  
+</data>  
+<data name="PdfViewer_ToolBar_ZoomIn" xml:space="preserve">  
+    <value>تكبير</value>  
+</data>  
+<data name="PdfViewer_ToolBar_ZoomOut" xml:space="preserve">  
+    <value>تخفيض</value>  
+</data>  
+<data name="Scheduler_AllDay" xml:space="preserve">  
+    <value>طوال اليوم</value>  
+</data>  
+<data name="Scheduler_AllEvents" xml:space="preserve">  
+    <value>جميع الأحداث</value>  
+</data>  
+<data name="Scheduler_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="Scheduler_ConfirmDeleteCancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="Scheduler_ConfirmDeleteOk" xml:space="preserve">  
+    <value>تأكيد</value>  
+</data>  
+<data name="Scheduler_ConfirmDeleteText" xml:space="preserve">  
+    <value>هل أنت متأكد أنك تريد حذف هذا الحدث؟</value>  
+</data>  
+<data name="Scheduler_ConfirmDeleteTitle" xml:space="preserve">  
+    <value>حذف الحدث</value>  
+</data>  
+<data name="Scheduler_Day" xml:space="preserve">  
+    <value>يوم</value>  
+</data>  
+<data name="Scheduler_Delete" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="Scheduler_DialogClose" xml:space="preserve">  
+    <value>إغلاق</value>  
+</data>
+<data name="Scheduler_Editor_Description" xml:space="preserve">  
+    <value>الوصف</value>  
+</data>  
+<data name="Scheduler_Editor_EditorTitle" xml:space="preserve">  
+    <value>حدث</value>  
+</data>  
+<data name="Scheduler_Editor_End" xml:space="preserve">  
+    <value>نهاية</value>  
+</data>  
+<data name="Scheduler_Editor_EndTimeRequiredValidationMessage" xml:space="preserve">  
+    <value>وقت النهاية مطلوب.</value>  
+</data>  
+<data name="Scheduler_Editor_EndTimeValueValidationMessage" xml:space="preserve">  
+    <value>يجب أن تكون نهاية الوقت بعد بداية الوقت.</value>  
+</data>  
+<data name="Scheduler_Editor_IsAllDay" xml:space="preserve">  
+    <value>حدث طوال اليوم</value>  
+</data>  
+<data name="Scheduler_Editor_Repeat" xml:space="preserve">  
+    <value>تكرار</value>  
+</data>  
+<data name="Scheduler_Editor_Start" xml:space="preserve">  
+    <value>بداية</value>  
+</data>  
+<data name="Scheduler_Editor_StartTimeRequiredValidationMessage" xml:space="preserve">  
+    <value>وقت البداية مطلوب.</value>  
+</data>  
+<data name="Scheduler_Editor_StartTimeValueValidationMessage" xml:space="preserve">  
+    <value>يجب أن تكون بداية الوقت قبل نهاية الوقت.</value>  
+</data>  
+<data name="Scheduler_Editor_Title" xml:space="preserve">  
+    <value>العنوان</value>  
+</data>  
+<data name="Scheduler_Editor_TitleRequiredValidationMessage" xml:space="preserve">  
+    <value>العنوان مطلوب.</value>  
+</data>  
+<data name="Scheduler_Month" xml:space="preserve">  
+    <value>شهر</value>  
+</data>  
+<data name="Scheduler_MultiDay" xml:space="preserve">  
+    <value>عدة أيام</value>  
+</data>  
+<data name="Scheduler_Next" xml:space="preserve">  
+    <value>التالي</value>  
+</data>  
+<data name="Scheduler_Previous" xml:space="preserve">  
+    <value>السابق</value>  
+</data>  
+<data name="Scheduler_Recurrence_DeleteRecurring" xml:space="preserve">  
+    <value>هل تريد حذف هذا الحدث فقط أم السلسلة كاملة؟</value>  
+</data>  
+<data name="Scheduler_Recurrence_DeleteWindowOccurrence" xml:space="preserve">  
+    <value>حذف الحدث الحالي</value>  
+</data>  
+<data name="Scheduler_Recurrence_DeleteWindowSeries" xml:space="preserve">  
+    <value>حذف السلسلة</value>  
+</data>  
+<data name="Scheduler_Recurrence_DeleteWindowTitle" xml:space="preserve">  
+    <value>حذف حدث متكرر</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Daily_Interval" xml:space="preserve">  
+    <value> يوم(أيام)</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Daily_RepeatEvery" xml:space="preserve">  
+    <value>كل</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_End_After" xml:space="preserve">  
+    <value>بعد</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_End_Label" xml:space="preserve">  
+    <value>نهاية</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_End_Never" xml:space="preserve">  
+    <value>أبدا</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_End_Occurrence" xml:space="preserve">  
+    <value> حدث(ات)</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_End_On" xml:space="preserve">  
+    <value>في</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Frequencies_Daily" xml:space="preserve">  
+    <value>يومي</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Frequencies_Monthly" xml:space="preserve">  
+    <value>شهري</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Frequencies_Never" xml:space="preserve">  
+    <value>أبدا</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Frequencies_Weekly" xml:space="preserve">  
+    <value>أسبوعي</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Frequencies_Yearly" xml:space="preserve">  
+    <value>سنوي</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Monthly_Day" xml:space="preserve">  
+    <value>يوم</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Monthly_Interval" xml:space="preserve">  
+    <value>شهر(أشهر)</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Monthly_RepeatEvery" xml:space="preserve">  
+    <value>كل</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Monthly_RepeatOn" xml:space="preserve">  
+    <value>تكرار في</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_OffsetPositions_First" xml:space="preserve">  
+    <value>الأول</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_OffsetPositions_Fourth" xml:space="preserve">  
+    <value>الرابع</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_OffsetPositions_Last" xml:space="preserve">  
+    <value>الأخير</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_OffsetPositions_Second" xml:space="preserve">  
+    <value>الثاني</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_OffsetPositions_Third" xml:space="preserve">  
+    <value>الثالث</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Weekdays_Day" xml:space="preserve">  
+    <value>يوم</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Weekdays_Weekday" xml:space="preserve">  
+    <value>يوم الأسبوع</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Weekdays_Weekend" xml:space="preserve">  
+    <value>عطلة نهاية الأسبوع</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Weekly_Interval" xml:space="preserve">  
+    <value>أسبوع(أسابيع)</value>  
+</data>
+<data name="Scheduler_Recurrence_Editor_Weekly_RepeatEvery" xml:space="preserve">  
+    <value>كل</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Weekly_RepeatOn" xml:space="preserve">  
+    <value>تكرار في</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Yearly_Interval" xml:space="preserve">  
+    <value>سنة(سنوات)</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Yearly_Of" xml:space="preserve">  
+    <value>من</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Yearly_RepeatEvery" xml:space="preserve">  
+    <value>كل</value>  
+</data>  
+<data name="Scheduler_Recurrence_Editor_Yearly_RepeatOn" xml:space="preserve">  
+    <value>تكرار في</value>  
+</data>  
+<data name="Scheduler_Recurrence_EditRecurring" xml:space="preserve">  
+    <value>هل ترغب في تعديل هذه الحادثة فقط أم السلسلة بأكملها؟</value>  
+</data>  
+<data name="Scheduler_Recurrence_EditWindowOccurrence" xml:space="preserve">  
+    <value>تعديل الحادثة الحالية</value>  
+</data>  
+<data name="Scheduler_Recurrence_EditWindowSeries" xml:space="preserve">  
+    <value>تعديل السلسلة</value>  
+</data>  
+<data name="Scheduler_Recurrence_EditWindowTitle" xml:space="preserve">  
+    <value>تعديل حدث متكرر</value>  
+</data>  
+<data name="Scheduler_Save" xml:space="preserve">  
+    <value>حفظ</value>  
+</data>  
+<data name="Scheduler_ShowFullDay" xml:space="preserve">  
+    <value>عرض اليوم الكامل</value>  
+</data>  
+<data name="Scheduler_ShowWorkDay" xml:space="preserve">  
+    <value>عرض ساعات العمل</value>  
+</data>  
+<data name="Scheduler_Timeline" xml:space="preserve">  
+    <value>خط الزمن</value>  
+</data>  
+<data name="Scheduler_Today" xml:space="preserve">  
+    <value>اليوم</value>  
+</data>  
+<data name="Scheduler_Week" xml:space="preserve">  
+    <value>أسبوع</value>  
+</data>  
+<data name="Signature_Clear" xml:space="preserve">  
+    <value>مسح</value>  
+</data>  
+<data name="Signature_Maximize" xml:space="preserve">  
+    <value>تكبير</value>  
+</data>  
+<data name="Signature_Minimize" xml:space="preserve">  
+    <value>تصغير</value>  
+</data>  
+<data name="Slider_Decrease" xml:space="preserve">  
+    <value>خفض</value>  
+</data>  
+<data name="Slider_Increase" xml:space="preserve">  
+    <value>زيادة</value>  
+</data>  
+<data name="SplitButton_Open" xml:space="preserve">  
+    <value>فتح</value>  
+</data>  
+<data name="Switch_OffLabel" xml:space="preserve">  
+    <value>إيقاف</value>  
+</data>  
+<data name="Switch_OnLabel" xml:space="preserve">  
+    <value>تشغيل</value>  
+</data>  
+<data name="TabStrip_ShowNextTabs" xml:space="preserve">  
+    <value>عرض علامات التبويب التالية</value>  
+</data>  
+<data name="TabStrip_ShowPreviousTabs" xml:space="preserve">  
+    <value>عرض علامات التبويب السابقة</value>  
+</data>  
+<data name="TimePicker_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="TimePicker_Day" xml:space="preserve">  
+    <value>يوم</value>  
+</data>  
+<data name="TimePicker_DayPeriod" xml:space="preserve">  
+    <value>صباحاً/مساءً</value>  
+</data>  
+<data name="TimePicker_Era" xml:space="preserve">  
+    <value>عصر</value>  
+</data>  
+<data name="TimePicker_Hour" xml:space="preserve">  
+    <value>ساعة</value>  
+</data>  
+<data name="TimePicker_Minute" xml:space="preserve">  
+    <value>دقيقة</value>  
+</data>  
+<data name="TimePicker_Month" xml:space="preserve">  
+    <value>شهر</value>  
+</data>  
+<data name="TimePicker_Now" xml:space="preserve">  
+    <value>الآن</value>  
+</data>  
+<data name="TimePicker_Open" xml:space="preserve">  
+    <value>فتح</value>  
+</data>  
+<data name="TimePicker_Quarter" xml:space="preserve">  
+    <value>ربع السنة</value>  
+</data>  
+<data name="TimePicker_Second" xml:space="preserve">  
+    <value>ثانية</value>  
+</data>  
+<data name="TimePicker_Set" xml:space="preserve">  
+    <value>تعيين</value>  
+</data>  
+<data name="TimePicker_ToggleClock" xml:space="preserve">  
+    <value>تغيير الساعة</value>  
+</data>  
+<data name="TimePicker_WeekDay" xml:space="preserve">  
+    <value>يوم الأسبوع</value>  
+</data>  
+  
+<data name="TimePicker_Year" xml:space="preserve">  
+    <value>سنة</value>  
+</data>  
+<data name="TimePicker_Zone" xml:space="preserve">  
+    <value>منطقة</value>  
+</data>  
+<data name="TreeList_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="TreeList_ConfirmDeleteCancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="TreeList_ConfirmDeleteOk" xml:space="preserve">  
+    <value>تأكيد</value>  
+</data>  
+<data name="TreeList_ConfirmDeleteText" xml:space="preserve">  
+    <value>هل أنت متأكد أنك تريد حذف هذا السجل؟</value>  
+</data>  
+<data name="TreeList_ConfirmDeleteTitle" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="TreeList_Create" xml:space="preserve">  
+    <value>إضافة سجل جديد</value>  
+</data>  
+<data name="TreeList_Delete" xml:space="preserve">  
+    <value>حذف</value>  
+</data>  
+<data name="TreeList_DialogClose" xml:space="preserve">  
+    <value>إغلاق</value>  
+</data>  
+<data name="TreeList_Edit" xml:space="preserve">  
+    <value>تعديل</value>  
+</data>  
+<data name="TreeList_NoRecords" xml:space="preserve">  
+    <value>لا توجد سجلات.</value>  
+</data>  
+<data name="TreeList_Search" xml:space="preserve">  
+    <value>بحث...</value>  
+</data>  
+<data name="TreeList_SelectAllRows" xml:space="preserve">  
+    <value>تحديد جميع الصفوف</value>  
+</data>  
+<data name="TreeList_SelectRow" xml:space="preserve">  
+    <value>تحديد صف واحد</value>  
+</data>  
+<data name="TreeList_SortedAscending" xml:space="preserve">  
+    <value>مرتبة تصاعدياً</value>  
+</data>  
+<data name="TreeList_SortedDescending" xml:space="preserve">  
+    <value>مرتبة تنازلياً</value>  
+</data>  
+<data name="TreeList_Update" xml:space="preserve">  
+    <value>تحديث</value>  
+</data>  
+<data name="Upload_Cancel" xml:space="preserve">  
+    <value>إلغاء</value>  
+</data>  
+<data name="Upload_Clear" xml:space="preserve">  
+    <value>مسح</value>  
+</data>
+<data name="Upload_FileStatusFailed" xml:space="preserve">  
+    <value>فشل تحميل الملف.</value>  
+</data>  
+<data name="Upload_FileStatusUploaded" xml:space="preserve">  
+    <value>تم تحميل الملف بنجاح.</value>  
+</data>  
+<data name="Upload_HeaderStatusUploaded" xml:space="preserve">  
+    <value>مكتمل</value>  
+</data>  
+<data name="Upload_HeaderStatusUploading" xml:space="preserve">  
+    <value>جارٍ التحميل...</value>  
+</data>  
+<data name="Upload_InvalidFileExtension" xml:space="preserve">  
+    <value>نوع الملف غير مسموح به.</value>  
+</data>  
+<data name="Upload_InvalidMaxFileSize" xml:space="preserve">  
+    <value>حجم الملف كبير جداً.</value>  
+</data>  
+<data name="Upload_InvalidMinFileSize" xml:space="preserve">  
+    <value>حجم الملف صغير جداً.</value>  
+</data>  
+<data name="Upload_Remove" xml:space="preserve">  
+    <value>اضغط على مفتاح الحذف للإزالة</value>  
+</data>  
+<data name="Upload_Retry" xml:space="preserve">  
+    <value>حاول مرة أخرى</value>  
+</data>  
+<data name="Upload_SelectFiles" xml:space="preserve">  
+    <value>اختر الملفات...</value>  
+</data>  
+<data name="Upload_UploadFiles" xml:space="preserve">  
+    <value>تحميل</value>  
+</data>  
+<data name="Validation_InvalidField" xml:space="preserve">  
+    <value>{0} غير صالح.</value>  
+</data>  
+<data name="Wizard_Done" xml:space="preserve">  
+    <value>مكتمل</value>  
+</data>  
+<data name="Wizard_Next" xml:space="preserve">  
+    <value>التالي</value>  
+</data>  
+<data name="Wizard_Pager" xml:space="preserve">  
+    <value>الخطوة {0} من {1}</value>  
+</data>  
+<data name="Wizard_Previous" xml:space="preserve">  
+    <value>السابق</value>  
+</data>  
+<data name="Upload_UploadedState" xml:space="preserve">  
+    <value>تم التحميل</value>  
+</data>  
+<data name="Upload_SelectedState" xml:space="preserve">  
+    <value>تم تحديده</value>  
+</data>  
+<data name="Upload_SelectedFilesAriaLabel" xml:space="preserve">  
+    <value>{0} ملف(ملفات) {1}. لانتقال، اضغط على مفتاح السهم للأسفل.</value>  
+</data>
+</root>
