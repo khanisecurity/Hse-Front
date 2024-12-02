@@ -8,6 +8,10 @@
     <base href="/" />
     <link rel="icon" type="image/png" href="favicon.png" />
 
+    <script src="_content/Telerik.UI.for.Blazor/js/telerik-blazor.js" defer></script>
+
+    <link href="/css/app.css" rel="stylesheet" type="text/css" />
+
     <!-- Bootstrap Css -->
     <link href="/css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
@@ -26,19 +30,25 @@
     <link href="manifest.webmanifest" rel="manifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
-    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
     <link rel="stylesheet" href="_content/Telerik.UI.for.Blazor/css/kendo-theme-default/all.css" />
+    <link href="ClientLocalizationResx.styles.css" rel="stylesheet" />
+
 </head>
 
 <body dir="rtl">
     <div id="layout-wrapper">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
     </div>
 
-    <!--<div id="blazor-error-ui">
+    <div id="blazor-error-ui">
         An unhandled error has occurred.
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
-    </div>-->
+    </div>
     <!--start back-to-top-->
     <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
         <i class="ri-arrow-up-line"></i>
@@ -60,7 +70,6 @@
     </div>
 
 
-    <script src="_content/Telerik.UI.for.Blazor/js/telerik-blazor.js" defer></script>
 
     <script src="/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/libs/simplebar/simplebar.min.js"></script>
@@ -68,6 +77,15 @@
     <script src="/libs/feather-icons/feather.min.js"></script>
     <script src="/js/lord-icon-2.1.0.js"></script>
     <script src="/js/plugins.js"></script>
+
+
+    <script>
+        window.blazorCulture = {
+            get: () => window.localStorage['BlazorCulture'],
+            set: (value) => window.localStorage['BlazorCulture'] = value
+        };
+    </script>
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
     <script src="/js/app.js" defer></script>
 
     <script>navigator.serviceWorker.register('service-worker.js');</script>

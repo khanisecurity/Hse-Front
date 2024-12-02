@@ -1,5 +1,6 @@
-﻿@inject BlazorApp1.Service.CultureService CultureService
-@inject NavigationManager NavigationManager
+﻿@using System.Globalization
+@inject IJSRuntime JS
+@inject NavigationManager Navigation
 
 <header id="page-topbar">
     <div class="layout-width">
@@ -584,9 +585,18 @@
     </div>
 </header>
 @code {
+    private CultureInfo? SelectedCulture;
+    protected override void OnInitialized()
+    {
+        SelectedCulture = CultureInfo.CurrentCulture;
+    }
+
     private void ChangeLanguage(string culture)
     {
-        CultureService.ChangeLanguage(culture);
-        // NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+        if (CultureInfo.CurrentCulture.EnglishName != culture )
+        {
+            JS.InvokeVoidAsync("blazorCulture.set", culture);
+            Navigation.NavigateTo(Navigation.Uri, forceLoad: true);
+        }
     }
 }
