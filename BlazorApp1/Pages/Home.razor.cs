@@ -1,6 +1,8 @@
 ﻿using Telerik.Blazor.Components;
 using BlazorApp1.Models.Invoice;
 using BlazorApp1.Models.Products;
+using System.Globalization;
+using Telerik.SvgIcons;
 
 namespace BlazorApp1.Pages
 {
@@ -18,11 +20,10 @@ namespace BlazorApp1.Pages
 
         private bool ExportAllPages { get; set; }
 
-        protected void OnInitializedAsync()
+        protected override async Task OnInitializedAsync()
         {
             LoadData();
         }
-
         private void LoadData()
         {
             GridData = _dataService.GetInvoices();
@@ -41,9 +42,16 @@ namespace BlazorApp1.Pages
             StateHasChanged();
         }
 
+        
+
         private void CreateItem(GridCommandEventArgs args)
         {
-            _dataService.CreateInvoice((Invoice)args.Item);
+            var obj = (Invoice)args.Item;
+            obj.Date = _date.Value.Date;
+            //if (_date.HasValue)
+            //    obj.Date = ConvertPersianToGregorian(_date.Value);
+
+            _dataService.CreateInvoice(obj);
             LoadData();
         }
 
@@ -59,6 +67,11 @@ namespace BlazorApp1.Pages
             LoadData();
         }
 
+        private void EditItem(GridCommandEventArgs args)
+        {
+            _dataService.UpdateInvoice((Invoice)args.Item);
+            LoadData();
+        }
         private void OnProductChanged(object theUserInput)
         {
             selectedProductId = Convert.ToInt32(theUserInput);

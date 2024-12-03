@@ -9,10 +9,11 @@ namespace BlazorApp1.Models.Invoice
     {
         public int Id { get; set; }
         public int ProductId { get; set; }
+        public string ProductTitle { get; set; }
         public int UnitId { get; set; }
+        public string UnitTitle { get; set; }
         public int Quantity { get; set; }
         public DateTime Date { get; set; }
-        public Product Product { get; set; }
-        public Unit Unit { get; set; }
+
     }
 }
