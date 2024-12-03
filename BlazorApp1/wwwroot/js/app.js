@@ -947,15 +947,7 @@
                             (document.getElementById("notification-actions").style.display = "");
                     });
             }),
-            document.getElementById("removeNotificationModal").addEventListener("show.bs.modal", function (e) {
-                document.getElementById("delete-notification").addEventListener("click", function () {
-                    Array.from(document.querySelectorAll(".notification-item")).forEach(function (e) {
-                        e.classList.contains("active") && e.remove();
-                    }),
-                        H(),
-                        document.getElementById("NotificationModalbtn-close").click();
-                });
-            })),
+            
         [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')).map(function (e) {
             return new bootstrap.Tooltip(e);
         }),
@@ -1050,8 +1042,8 @@
         p(),
         window.addEventListener("resize", function () {
             q && clearTimeout(q), (q = setTimeout(W, 2e3));
-        });
-}
+        })
+)}
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -1075,6 +1067,6 @@ document.addEventListener("DOMContentLoaded", function () {
             } catch (error) {
                 console.error(error);
             }
-        }, 100); 
+        }, 200); 
     });
 });  

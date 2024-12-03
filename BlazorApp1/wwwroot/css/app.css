@@ -110,3 +110,11 @@ a, .btn-link {
 code {
     color: #c02d76;
 }
+
+.k-popup {
+    direction:rtl !important;
+}
+.k-toolbar {
+    direction: rtl !important;
+}
+

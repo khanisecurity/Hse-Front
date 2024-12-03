@@ -4,11 +4,10 @@
 @using BlazorApp1.Models.Products
 @using BlazorApp1.Data;
 @using static BlazorApp1.Utility.DateUtility;
-
-
 @inject IDataService _dataService
-<div style="height: 80vh">
 
+
+<div style="height: 80vh">
     <TelerikGrid Data="@GridData" Height="100%" @bind-PageSize="@PageSize" EditMode="@GridEditMode.Inline" FilterMode="@GridFilterMode.FilterRow"
                  @bind-Page="@CurrentPage" Pageable="true" Sortable="true" Resizable="true" Reorderable="true" SelectionMode="GridSelectionMode.Multiple"
                  OnUpdate="@UpdateItem" OnDelete="@DeleteItem" OnCreate="@CreateItem" OnEdit="@EditItem" Navigable="true" class="k-rtl">
