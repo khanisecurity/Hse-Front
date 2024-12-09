@@ -1,83 +1,76 @@
-﻿@using System.Globalization
-@inject IJSRuntime JS
-@inject NavigationManager Navigation
+﻿@inherits AppComponentBase
 
 <div class="dropdown ms-1 topbar-head-dropdown header-item">
-    <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <img id="header-lang-img" src="/images/flags/us.svg" alt="Header Language" height="20" class="rounded">
+    <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
+            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img id="header-lang-img" src="@SelectedLanguage.FlagUrl" alt="Header Language" height="20" class="rounded">
     </button>
     <div class="dropdown-menu dropdown-menu-end">
-
-        <!-- item-->
-        <a href="javascript:void(0);" class="dropdown-item notify-item language py-2" data-lang="en" title="English">
-            <img src="/images/flags/us.svg" alt="user-image" class="me-2 rounded" height="18">
-            <span class="align-middle">English</span>
-        </a>
-
-        <!-- item-->
-        <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp" title="Spanish">
-            <img src="/images/flags/spain.svg" alt="user-image" class="me-2 rounded" height="18">
-            <span class="align-middle">Española</span>
-        </a>
-
-        <!-- item-->
-        <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="gr" title="German">
-            <img src="/images/flags/germany.svg" alt="user-image" class="me-2 rounded" height="18">
-            <span class="align-middle">Deutsche</span>
-        </a>
-
-        <!-- item-->
-        <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="it" title="Italian">
-            <img src="/images/flags/italy.svg" alt="user-image" class="me-2 rounded" height="18">
-            <span class="align-middle">Italiana</span>
-        </a>
-
-        <!-- item-->
-        <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru" title="Russian">
-            <img src="/images/flags/russia.svg" alt="user-image" class="me-2 rounded" height="18">
-            <span class="align-middle">русский</span>
-        </a>
-
-        <!-- item-->
-        <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ch" title="Chinese">
-            <img src="/images/flags/china.svg" alt="user-image" class="me-2 rounded" height="18">
-            <span class="align-middle">中国人</span>
-        </a>
-
-        <!-- item-->
-        <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="fr" title="French">
-            <img src="/images/flags/french.svg" alt="user-image" class="me-2 rounded" height="18">
-            <span class="align-middle">français</span>
-        </a>
-
-        <!-- item-->
-        <a class="dropdown-item notify-item language" data-lang="ar" title="Arabic" @onclick='() => ChangeLanguage("ar-SA")'>
-            <img src="/images/flags/ae.svg" alt="user-image" class="me-2 rounded" height="18">
-            <span class="align-middle">Arabic</span>
-        </a>
-
-        <!-- item-->
-        <a class="dropdown-item notify-item language" data-lang="fa" title="Farsi" @onclick='() => ChangeLanguage("fa-IR")'>
-            <img src="/images/flags/ir.svg" alt="user-image" class="me-2 rounded" height="18">
-            <span class="align-middle">Farsi</span>
-        </a>
-
+        @foreach (var language in Languages)
+        {
+            <a class="dropdown-item notify-item language py-2" @onclick="() => ChangeLanguage(language.Culture)">
+                <img src="@language.FlagUrl" alt="@language.Name" class="me-2 rounded" height="18">
+                <span class="align-middle">@language.Name</span>
+            </a>
+        }
     </div>
 </div>
 
 @code {
-    private CultureInfo? SelectedCulture;
-    protected override void OnInitialized()
+    private record LanguageT(string Culture, string Name, string FlagUrl);
+    private List<LanguageT> Languages { get; set; } = new()
     {
-        SelectedCulture = CultureInfo.CurrentCulture;
+        new LanguageT("en-US", "English", "/images/flags/us.svg"),
+        new LanguageT("es-ES", "Spanish", "/images/flags/spain.svg"),
+        new LanguageT("de-DE", "German", "/images/flags/germany.svg"),
+        new LanguageT("it-IT", "Italian", "/images/flags/italy.svg"),
+        new LanguageT("ru-RU", "Russian", "/images/flags/russia.svg"),
+        new LanguageT("zh-CN", "Chinese", "/images/flags/china.svg"),
+        new LanguageT("fr-FR", "French", "/images/flags/french.svg"),
+        new LanguageT("ar-SA", "Arabic", "/images/flags/ae.svg"),
+        new LanguageT("fa-IR", "Farsi", "/images/flags/ir.svg"),
+    };
+
+    private LanguageT SelectedLanguage { get; set; } = new("fa-IR", "Farsi", "/images/flags/ir.svg");
+
+    private CultureInfo? SelectedCulture;
+    protected override async Task OnInitAsync()
+    {
+
+        await Task.Run(() =>
+        {
+            Console.WriteLine(CultureInfo.CurrentCulture);
+            SelectedCulture = CultureInfo.CurrentCulture;
+            SelectedLanguage = Languages.Where(x => x.Culture == SelectedCulture.ToString()).First();
+        });
+
     }
 
-    private void ChangeLanguage(string culture)
+    private async Task ChangeLanguage(string culture)
     {
-        if (CultureInfo.CurrentCulture.EnglishName != culture)
-        {
-            JS.InvokeVoidAsync("blazorCulture.set", culture);
-            Navigation.NavigateTo(Navigation.Uri, forceLoad: true);
-        }
+        SelectedLanguage = Languages.Where(x => x.Culture == culture).First();
+        SelectedCulture = CultureInfo.GetCultureInfo((Languages.FirstOrDefault(l => l.Culture == culture) ?? SelectedLanguage).Culture);
+        await StorageService.SetItem("appCulture", culture, persistent: true);
+        CultureManageer.SetCurrentCulture(SelectedCulture!.ToString());
+        
+        
+        // the Cookie service needs rework!
+
+
+
+        // if (AppPlatform.IsBlazorHybrid)
+        // {
+        // }
+        // else
+        // {
+        //     await cookieService.SetCookie(new()
+        //         {
+        //             Name = ".AspNetCore.Culture",
+        //             Value = Uri.EscapeDataString($"c={SelectedCulture}|uic={SelectedCulture}"),
+        //             MaxAge = 30 * 24 * 3600,
+        //             Secure = AppEnvironment.IsDev() is false
+        //         });
+        // }
+        
     }
 }

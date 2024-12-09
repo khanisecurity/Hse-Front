@@ -165,6 +165,57 @@
   <data name="Carousel_Previous" xml:space="preserve">
     <value>Previa</value>
   </data>
+  <data name="ColorAlpha_Label" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="ColorBlue_Label" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="ColorGradient_AlphaSlider_Label" xml:space="preserve">
+    <value>Valor del control deslizante alfa</value>
+  </data>
+  <data name="ColorGradient_HueSlider_Label" xml:space="preserve">
+    <value>Valor del control deslizante de tono</value>
+  </data>
+  <data name="ColorGradient_ToggleButton" xml:space="preserve">
+    <value>Alternar formato.</value>
+  </data>
+  <data name="ColorGreen_Label" xml:space="preserve">
+    <value>G</value>
+  </data>
+  <data name="ColorHex_Label" xml:space="preserve">
+    <value>HEX</value>
+  </data>
+  <data name="ColorHex_Placeholder" xml:space="preserve">
+    <value>Color hexadecimal</value>
+  </data>
+  <data name="ColorPicker_Apply" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="ColorPicker_Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="ColorPicker_ClearTitle" xml:space="preserve">
+    <value>Limpiar</value>
+  </data>
+  <data name="ColorPicker_CurrentColor" xml:space="preserve">
+    <value>Color actual</value>
+  </data>
+  <data name="ColorPicker_GradientViewTitle" xml:space="preserve">
+    <value>Seleccionar vista de degradado</value>
+  </data>
+  <data name="ColorPicker_Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="ColorPicker_PaletteViewTitle" xml:space="preserve">
+    <value>Seleccionar vista de paleta</value>
+  </data>
+  <data name="ColorPicker_PreviewColor" xml:space="preserve">
+    <value>Color de vista previa</value>
+  </data>
+  <data name="ColorRed_Label" xml:space="preserve">
+    <value>R</value>
+  </data>
   <data name="ColumnMenu_Apply" xml:space="preserve">
     <value>Aplicar</value>
   </data>
@@ -198,6 +249,9 @@
   <data name="ComboBox_NoData" xml:space="preserve">
     <value>Datos no encontrados</value>
   </data>
+  <data name="ComboBox_Open" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
   <data name="DateInput_ParsingErrorMessage" xml:space="preserve">
     <value>El formato de fecha no se puede analizar. Por favor introduzca una fecha valida.</value>
   </data>
@@ -206,6 +260,9 @@
   </data>
   <data name="DatePicker_Cancel" xml:space="preserve">
     <value>Cancelar</value>
+  </data>
+  <data name="DatePicker_Open" xml:space="preserve">
+    <value>Abrir</value>
   </data>
   <data name="DatePicker_SetDate" xml:space="preserve">
     <value>Define la fecha</value>
@@ -228,6 +285,9 @@
   <data name="DateTimePicker_Date" xml:space="preserve">
     <value>Fecha</value>
   </data>
+  <data name="DateTimePicker_Open" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
   <data name="DateTimePicker_Set" xml:space="preserve">
     <value>Ajustar</value>
   </data>
@@ -237,6 +297,9 @@
   <data name="Dialog_Cancel" xml:space="preserve">
     <value>Cancelar</value>
   </data>
+  <data name="Dialog_Close" xml:space="preserve">
+    <value>Cerca</value>
+  </data>
   <data name="Dialog_Ok" xml:space="preserve">
     <value>OK</value>
   </data>
@@ -245,6 +308,9 @@
   </data>
   <data name="DropDownList_NoData" xml:space="preserve">
     <value>Sin datos</value>
+  </data>
+  <data name="DropDownList_Open" xml:space="preserve">
+    <value>Abrir</value>
   </data>
   <data name="Editor_AddColumnAfter" xml:space="preserve">
     <value>Agregar columna a la derecha</value>
@@ -507,6 +573,12 @@
   <data name="Filter_AddGroup" xml:space="preserve">
     <value>Añadir grupo</value>
   </data>
+  <data name="Filter_AdditionalOperator" xml:space="preserve">
+    <value>Operador adicional</value>
+  </data>
+  <data name="Filter_AdditionalValue" xml:space="preserve">
+    <value>Valor adicional</value>
+  </data>
   <data name="Filter_All" xml:space="preserve">
     <value>(Todas)</value>
   </data>
@@ -570,6 +642,9 @@
   <data name="Filter_FilterSettings" xml:space="preserve">
     <value>Configuración de filtros</value>
   </data>
+  <data name="Filter_Info" xml:space="preserve">
+    <value>Mostrar registros con valor que</value>
+  </data>
   <data name="Filter_IsFalse" xml:space="preserve">
     <value>No</value>
   </data>
@@ -602,6 +677,9 @@
   </data>
   <data name="Filter_NumberIsNull" xml:space="preserve">
     <value>Es nulo</value>
+  </data>
+  <data name="Filter_Operator" xml:space="preserve">
+    <value>Operador</value>
   </data>
   <data name="Filter_Or" xml:space="preserve">
     <value>O</value>
@@ -653,6 +731,9 @@
   </data>
   <data name="Filter_StringStartsWith" xml:space="preserve">
     <value>Comienza con</value>
+  </data>
+  <data name="Filter_Value" xml:space="preserve">
+    <value>Valor</value>
   </data>
   <data name="Form_Clear" xml:space="preserve">
     <value>Reiniciar</value>
@@ -711,8 +792,26 @@
   <data name="Grid_Cancel" xml:space="preserve">
     <value>Cancelar</value>
   </data>
+  <data name="Grid_CancelChanges" xml:space="preserve">
+    <value>Cancelar cambios</value>
+  </data>
   <data name="Grid_CancelDelete" xml:space="preserve">
     <value>Cancelar</value>
+  </data>
+  <data name="Grid_CheckAll" xml:space="preserve">
+    <value>Comprobar todo</value>
+  </data>
+  <data name="Grid_Columns" xml:space="preserve">
+    <value>columnas</value>
+  </data>
+  <data name="Grid_ColumnSettings" xml:space="preserve">
+    <value>Configuración de columnas</value>
+  </data>
+  <data name="Grid_Confirmation" xml:space="preserve">
+    <value>¿Está seguro de que desea eliminar este registro?</value>
+  </data>
+  <data name="Grid_ConfirmDelete" xml:space="preserve">
+    <value>Borrar</value>
   </data>
   <data name="Grid_ConfirmDeleteCancel" xml:space="preserve">
     <value>Cancelar</value>
@@ -729,6 +828,9 @@
   <data name="Grid_Create" xml:space="preserve">
     <value>Añadir</value>
   </data>
+  <data name="Grid_Csv" xml:space="preserve">
+    <value>Exportar en CSV</value>
+  </data>
   <data name="Grid_DataTable" xml:space="preserve">
     <value>Tabla de datos</value>
   </data>
@@ -738,6 +840,9 @@
   <data name="Grid_DialogClose" xml:space="preserve">
     <value>Cerrar</value>
   </data>
+  <data name="Grid_Done" xml:space="preserve">
+    <value>Hecho</value>
+  </data>
   <data name="Grid_DragItems" xml:space="preserve">
     <value>elementos seleccionados</value>
   </data>
@@ -746,6 +851,9 @@
   </data>
   <data name="Grid_Edit" xml:space="preserve">
     <value>Editar</value>
+  </data>
+  <data name="Grid_Excel" xml:space="preserve">
+    <value>Exportar en Excel</value>
   </data>
   <data name="Grid_Filter" xml:space="preserve">
     <value>Filtrar</value>
@@ -759,14 +867,23 @@
   <data name="Grid_GroupHeaderLabel" xml:space="preserve">
     <value>Encabezado de grupo de cuadrícula</value>
   </data>
+  <data name="Grid_Lock" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
   <data name="Grid_NoRecords" xml:space="preserve">
     <value>No hay registros disponibles.</value>
   </data>
   <data name="Grid_Remove" xml:space="preserve">
     <value>Remover</value>
   </data>
+  <data name="Grid_SaveChanges" xml:space="preserve">
+    <value>Guardar cambios</value>
+  </data>
   <data name="Grid_Search" xml:space="preserve">
     <value>Buscar...</value>
+  </data>
+  <data name="Grid_Select" xml:space="preserve">
+    <value>Seleccione</value>
   </data>
   <data name="Grid_SelectAllRows" xml:space="preserve">
     <value>Seleccionar todas las filas</value>
@@ -788,6 +905,9 @@
   </data>
   <data name="Grid_ToolbarLabel" xml:space="preserve">
     <value>Barra de herramientas de cuadrícula</value>
+  </data>
+  <data name="Grid_Unlock" xml:space="preserve">
+    <value>Desbloquear</value>
   </data>
   <data name="Grid_Update" xml:space="preserve">
     <value>Actualizar</value>
@@ -848,6 +968,9 @@
   </data>
   <data name="Pager_PageDisplay" xml:space="preserve">
     <value>Página {0}</value>
+  </data>
+  <data name="Pager_PageInputLabel" xml:space="preserve">
+    <value>Seleccione una página</value>
   </data>
   <data name="Pager_Previous" xml:space="preserve">
     <value>Ir a la página anterior</value>
@@ -1122,6 +1245,15 @@
   <data name="Scheduler_Week" xml:space="preserve">
     <value>Semana</value>
   </data>
+  <data name="Signature_Clear" xml:space="preserve">
+    <value>Limpiar</value>
+  </data>
+  <data name="Signature_Maximize" xml:space="preserve">
+    <value>Maximizar</value>
+  </data>
+  <data name="Signature_Minimize" xml:space="preserve">
+    <value>Minimizar</value>
+  </data>
   <data name="Slider_Decrease" xml:space="preserve">
     <value>Decrecer</value>
   </data>
@@ -1136,6 +1268,12 @@
   </data>
   <data name="Switch_OnLabel" xml:space="preserve">
     <value>Si</value>
+  </data>
+  <data name="TabStrip_ShowNextTabs" xml:space="preserve">
+    <value>Mostrar pestañas siguientes</value>
+  </data>
+  <data name="TabStrip_ShowPreviousTabs" xml:space="preserve">
+    <value>Mostrar pestañas anteriores</value>
   </data>
   <data name="TimePicker_Cancel" xml:space="preserve">
     <value>Cancelar</value>
@@ -1160,6 +1298,9 @@
   </data>
   <data name="TimePicker_Now" xml:space="preserve">
     <value>Ahora</value>
+  </data>
+  <data name="TimePicker_Open" xml:space="preserve">
+    <value>Abrir</value>
   </data>
   <data name="TimePicker_Quarter" xml:space="preserve">
     <value>Trimestre</value>
@@ -1215,6 +1356,12 @@
   <data name="TreeList_Search" xml:space="preserve">
     <value>Buscar...</value>
   </data>
+  <data name="TreeList_SelectAllRows" xml:space="preserve">
+    <value>Seleccionar todas las filas</value>
+  </data>
+  <data name="TreeList_SelectRow" xml:space="preserve">
+    <value>Seleccione una fila</value>
+  </data>
   <data name="TreeList_SortedAscending" xml:space="preserve">
     <value>Ordenados en orden ascendente</value>
   </data>
@@ -1263,6 +1410,9 @@
   <data name="Upload_UploadFiles" xml:space="preserve">
     <value>Subir</value>
   </data>
+  <data name="Validation_InvalidField" xml:space="preserve">
+    <value>{0} no es válido.</value>
+  </data>
   <data name="Wizard_Done" xml:space="preserve">
     <value>Hecho</value>
   </data>
@@ -1274,156 +1424,6 @@
   </data>
   <data name="Wizard_Previous" xml:space="preserve">
     <value>Previa</value>
-  </data>
-  <data name="TabStrip_ShowPreviousTabs" xml:space="preserve">
-    <value>Mostrar pestañas anteriores</value>
-  </data>
-  <data name="TabStrip_ShowNextTabs" xml:space="preserve">
-    <value>Mostrar pestañas siguientes</value>
-  </data>
-  <data name="TimePicker_Open" xml:space="preserve">
-    <value>Abrir</value>
-  </data>
-  <data name="TreeList_SelectAllRows" xml:space="preserve">
-    <value>Seleccionar todas las filas</value>
-  </data>
-  <data name="TreeList_SelectRow" xml:space="preserve">
-    <value>Seleccione una fila</value>
-  </data>
-  <data name="Validation_InvalidField" xml:space="preserve">
-    <value>{0} no es válido.</value>
-  </data>
-  <data name="Pager_PageInputLabel" xml:space="preserve">
-    <value>Seleccione una página</value>
-  </data>
-  <data name="Grid_Unlock" xml:space="preserve">
-    <value>Desbloquear</value>
-  </data>
-  <data name="Grid_Select" xml:space="preserve">
-    <value>Seleccione</value>
-  </data>
-  <data name="Grid_SaveChanges" xml:space="preserve">
-    <value>Guardar cambios</value>
-  </data>
-  <data name="Grid_Lock" xml:space="preserve">
-    <value>Cerrar</value>
-  </data>
-  <data name="Grid_Excel" xml:space="preserve">
-    <value>Exportar en Excel</value>
-  </data>
-  <data name="Grid_Csv" xml:space="preserve">
-    <value>Exportar en CSV</value>
-  </data>
-  <data name="Grid_Done" xml:space="preserve">
-    <value>Hecho</value>
-  </data>
-  <data name="Grid_ConfirmDelete" xml:space="preserve">
-    <value>Borrar</value>
-  </data>
-  <data name="Grid_Confirmation" xml:space="preserve">
-    <value>¿Está seguro de que desea eliminar este registro?</value>
-  </data>
-  <data name="Grid_ColumnSettings" xml:space="preserve">
-    <value>Configuración de columnas</value>
-  </data>
-  <data name="Grid_Columns" xml:space="preserve">
-    <value>columnas</value>
-  </data>
-  <data name="Grid_CheckAll" xml:space="preserve">
-    <value>Comprobar todo</value>
-  </data>
-  <data name="Grid_CancelChanges" xml:space="preserve">
-    <value>Cancelar cambios</value>
-  </data>
-  <data name="Filter_Value" xml:space="preserve">
-    <value>Valor</value>
-  </data>
-  <data name="Filter_Operator" xml:space="preserve">
-    <value>Operador</value>
-  </data>
-  <data name="Filter_Info" xml:space="preserve">
-    <value>Mostrar registros con valor que</value>
-  </data>
-  <data name="Filter_AdditionalValue" xml:space="preserve">
-    <value>Valor adicional</value>
-  </data>
-  <data name="Filter_AdditionalOperator" xml:space="preserve">
-    <value>Operador adicional</value>
-  </data>
-  <data name="DropDownList_Open" xml:space="preserve">
-    <value>Abrir</value>
-  </data>
-  <data name="DateTimePicker_Open" xml:space="preserve">
-    <value>Abrir</value>
-  </data>
-  <data name="ComboBox_Open" xml:space="preserve">
-    <value>Abrir</value>
-  </data>
-  <data name="DatePicker_Open" xml:space="preserve">
-    <value>Abrir</value>
-  </data>
-  <data name="Dialog_Close" xml:space="preserve">
-    <value>Cerca</value>
-  </data>
-  <data name="ColorGradient_ToggleButton" xml:space="preserve">
-    <value>Alternar formato.</value>
-  </data>
-  <data name="ColorGradient_HueSlider_Label" xml:space="preserve">
-    <value>Valor del control deslizante de tono</value>
-  </data>
-  <data name="ColorHex_Placeholder" xml:space="preserve">
-    <value>Color hexadecimal</value>
-  </data>
-  <data name="ColorGreen_Label" xml:space="preserve">
-    <value>G</value>
-  </data>
-  <data name="ColorHex_Label" xml:space="preserve">
-    <value>HEX</value>
-  </data>
-  <data name="ColorPicker_Apply" xml:space="preserve">
-    <value>Aplicar</value>
-  </data>
-  <data name="ColorAlpha_Label" xml:space="preserve">
-    <value>A</value>
-  </data>
-  <data name="ColorGradient_AlphaSlider_Label" xml:space="preserve">
-    <value>Valor del control deslizante alfa</value>
-  </data>
-  <data name="ColorPicker_Cancel" xml:space="preserve">
-    <value>Cancelar</value>
-  </data>
-  <data name="ColorPicker_CurrentColor" xml:space="preserve">
-    <value>Color actual</value>
-  </data>
-  <data name="ColorPicker_GradientViewTitle" xml:space="preserve">
-    <value>Seleccionar vista de degradado</value>
-  </data>
-  <data name="ColorPicker_PaletteViewTitle" xml:space="preserve">
-    <value>Seleccionar vista de paleta</value>
-  </data>
-  <data name="ColorPicker_PreviewColor" xml:space="preserve">
-    <value>Color de vista previa</value>
-  </data>
-  <data name="ColorRed_Label" xml:space="preserve">
-    <value>R</value>
-  </data>
-  <data name="ColorBlue_Label" xml:space="preserve">
-    <value>B</value>
-  </data>
-  <data name="ColorPicker_ClearTitle" xml:space="preserve">
-    <value>Limpiar</value>
-  </data>
-  <data name="ColorPicker_Open" xml:space="preserve">
-    <value>Abrir</value>
-  </data>
-  <data name="Signature_Clear" xml:space="preserve">
-    <value>Limpiar</value>
-  </data>
-  <data name="Signature_Maximize" xml:space="preserve">
-    <value>Maximizar</value>
-  </data>
-  <data name="Signature_Minimize" xml:space="preserve">
-    <value>Minimizar</value>
   </data>
   <data name="Upload_UploadedState" xml:space="preserve">
     <value>subido</value>
