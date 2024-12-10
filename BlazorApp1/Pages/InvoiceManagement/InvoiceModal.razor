@@ -1,0 +1,54 @@
+﻿@using BlazorApp1.Models.Invoice  
+@inject HttpClient HttpClient  
+
+<TelerikWindow @bind-Visible="@IsVisible" Title="Invoice" Modal="true" Width="400px" Height="300px">  
+    <WindowContent>  
+        <EditForm Model="@CurrentInvoice" OnValidSubmit="HandleValidSubmit">  
+            <DataAnnotationsValidator />  
+            <ValidationSummary />  
+            <div>  
+                <label>Product Title:</label>  
+                <InputText @bind-Value="@CurrentInvoice.ProductTitle" />  
+            </div>  
+            <div>  
+                <label>Quantity:</label>  
+                <InputNumber @bind-Value="@CurrentInvoice.Quantity" />  
+            </div>  
+            <div>  
+                <label>Date:</label>  
+                <InputDate @bind-Value="@CurrentInvoice.Date" />  
+            </div>  
+            <button type="submit">Save</button>  
+            <button type="button" @onclick="Close">Cancel</button>  
+        </EditForm>  
+    </WindowContent>  
+</TelerikWindow>  
+
+@code {  
+    [Parameter] public bool IsVisible { get; set; }  
+    [Parameter] public Invoice CurrentInvoice { get; set; }  
+    [Parameter] public EventCallback<Invoice> OnSaved { get; set; }  
+
+    private async Task HandleValidSubmit()  
+    {  
+        if (CurrentInvoice.Id == 0)  
+        {  
+            // Adding a new invoice  
+            await HttpClient.PostAsJsonAsync("api/invoices", CurrentInvoice);  
+        }  
+        else  
+        {  
+            // Updating an existing invoice  
+            await HttpClient.PutAsJsonAsync($"api/invoices/{CurrentInvoice.Id}", CurrentInvoice);  
+        }  
+
+        await OnSaved.InvokeAsync(CurrentInvoice);  
+        Close();  
+    }  
+
+    private void Close()  
+    {  
+        IsVisible = false;  
+        CurrentInvoice = new Invoice(); // Reset for future use  
+    }  
+}  

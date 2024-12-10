@@ -1,0 +1,34 @@
+﻿@page "/InvoiceManagement"  
+
+@using BlazorApp1.Models.Invoice  
+
+<BasePage>  
+    <InvoiceGrid @ref="invoiceGrid" OnAddInvoice="@ShowAddInvoicePopup" OnEditInvoice="@ShowEditInvoicePopup" />  
+
+    <InvoiceModal @bind-IsVisible="@isModalVisible" CurrentInvoice="@currentInvoice"   
+                  OnSaved="@HandleInvoiceSaved" />  
+</BasePage>  
+
+@code {  
+    private bool isModalVisible = false;  
+    private Invoice currentInvoice = new Invoice();  
+    private InvoiceGrid invoiceGrid;  
+
+    private void ShowAddInvoicePopup()  
+    {  
+        currentInvoice = new Invoice(); // Initialize a new Invoice for adding  
+        isModalVisible = true;  
+    }  
+
+    private void ShowEditInvoicePopup(Invoice invoice)  
+    {  
+        currentInvoice = invoice; // Set the invoice to edit  
+        isModalVisible = true; // Show modal for editing  
+    }  
+
+    private void HandleInvoiceSaved(Invoice savedInvoice)  
+    {  
+        // Refreshing data after a successful save  
+        invoiceGrid.Refresh(); // Assuming you have a Refresh method in InvoiceGrid  
+    }  
+}  

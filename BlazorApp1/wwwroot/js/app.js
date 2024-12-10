@@ -1067,6 +1067,6 @@ document.addEventListener("DOMContentLoaded", function () {
             } catch (error) {
                 console.error(error);
             }
-        }, 200); 
+        }, 300); 
     });
 });  

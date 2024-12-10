@@ -1,0 +1,30 @@
+﻿@using Telerik.Blazor.Components  
+@inject IJSRuntime JSRuntime  
+
+<TelerikWindow @bind-Visible="@IsVisible" Title="Confirm Action" Modal="true" Width="400px" Height="200px" Close="@OnClose">  
+    <WindowContent>  
+        <p>@Message</p>  
+        <div class="modal-footer">  
+            <button type="button" class="btn btn-secondary" @onclick="OnClose">Cancel</button>  
+            <button type="button" class="btn btn-danger" @onclick="Confirm">Delete</button>  
+        </div>  
+    </WindowContent>  
+</TelerikWindow>  
+
+@code {  
+    [Parameter] public bool IsVisible { get; set; }  
+    [Parameter] public string Message { get; set; }  
+    [Parameter] public EventCallback<bool> OnConfirmed { get; set; }  
+
+    private void Confirm()  
+    {  
+        IsVisible = false;  
+        OnConfirmed.InvokeAsync(true);  
+    }  
+
+    private void OnClose()  
+    {  
+        IsVisible = false;  
+        OnConfirmed.InvokeAsync(false);  
+    }  
+}  

@@ -1,0 +1,83 @@
+﻿@inherits BasePage  
+@inject HttpClient HttpClient
+@using BlazorApp1.Models.Invoice  
+@using Pages.Components
+
+<TelerikGrid Data="@data" Height="400px">  
+    <GridToolBar>  
+        <button class="btn btn-primary" @onclick="ShowAddInvoicePopup">Add Invoice</button>  
+        <button class="btn btn-secondary" @onclick="ExportToExcel">Export to Excel</button>  
+    </GridToolBar>  
+    <GridColumns>  
+        <GridColumn Field="@nameof(Invoice.ProductTitle)" Title="Product" />  
+        <GridColumn Field="@nameof(Invoice.Quantity)" Title="Quantity" />  
+        <GridColumn Field="@nameof(Invoice.Date)" Title="Date" />  
+        <GridColumn Title="Actions" IsActionColumn="true">  
+            <Template>  
+                <button class="btn btn-warning" @onclick="@ShowEditInvoicePopup">Edit</button>
+                <button class="btn btn-danger" @onclick="@ConfirmDelete">Delete</button>
+            </Template>  
+        </GridColumn>  
+    </GridColumns>  
+</TelerikGrid>  
+
+<ConfirmationDialog Message="Are you sure you want to delete the selected invoice?" OnConfirmed="@HandleDeleteConfirmation" />  
+
+@code {  
+    private List<Invoice> data = new List<Invoice>();  
+    private bool isModalVisible = false;
+    private Invoice invoiceToDelete;  
+    [Parameter] public EventCallback OnRefresh { get; set; } // New event callback
+
+    protected override async Task OnInitializedAsync()  
+    {  
+        await LoadDataAsync(LoadInvoices);  
+    }  
+
+    private async Task LoadInvoices()  
+    {  
+        data = await HttpClient.GetFromJsonAsync<List<Invoice>>("api/invoices");
+    }  
+
+    private void ShowAddInvoicePopup()
+    {
+        // Emit an event to show the add invoice modal with the refresh callback
+        OnRefresh.InvokeAsync(); // Notify the parent to refresh
+    }
+
+    private void ShowEditInvoicePopup(Invoice invoice)
+    {
+        // Emit an event to show the edit invoice modal with the selected invoice
+        OnRefresh.InvokeAsync(); // Notify the parent to refresh
+    }
+
+    private void ConfirmDelete(Invoice invoice)
+    {
+        invoiceToDelete = invoice;
+        isModalVisible = true;
+    }
+
+    private void HandleDeleteConfirmation(bool confirmed)
+    {
+        if (confirmed && invoiceToDelete != null)
+        {
+            data.Remove(invoiceToDelete);
+            invoiceToDelete = null;
+
+            // Optionally call an API to delete the invoice from the server
+            OnRefresh.InvokeAsync(); // Notify the parent to refresh
+        }
+
+        isModalVisible = false;
+    }
+
+    private void ExportToExcel()  
+    {  
+        Console.WriteLine("Export to Excel");  
+    }
+    
+    public void Refresh()
+    {
+        LoadInvoices(); 
+    }
+}  
