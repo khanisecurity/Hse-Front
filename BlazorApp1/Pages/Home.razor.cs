@@ -20,10 +20,14 @@ namespace BlazorApp1.Pages
 
         private bool ExportAllPages { get; set; }
 
-        protected override async Task OnInitializedAsync()
+        protected override async Task OnInitAsync()
         {
-            LoadData();
+            await Task.Run(() =>
+            {
+                LoadData();
+            });
         }
+
         private void LoadData()
         {
             GridData = _dataService.GetInvoices();
