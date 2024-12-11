@@ -5,60 +5,59 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 using System.Globalization;
 
-namespace BlazorApp1.Service
+namespace BlazorApp1.Service;
+
+public class StorageService : IStorageService  
 {
-    public class StorageService : IStorageService  
+    public static ILocalStorageService _localStorage {  get; set; }
+    [Inject] ISyncLocalStorageService _sessionStorage {  get; set; } = default!;
+
+    private async Task<T?> GetStorageAsync<T>(bool persistent, string key)
     {
-        public static ILocalStorageService _localStorage {  get; set; }
-        [Inject] ISyncLocalStorageService _sessionStorage {  get; set; } = default!;
+        return persistent
+            ? await _localStorage.GetItemAsync<T>(key)
+            : _sessionStorage.GetItem<T>(key);
+    }
 
-        private async Task<T?> GetStorageAsync<T>(bool persistent, string key)
+    public async Task SetStorageAsync<T>(bool persistent, string key, T value)
+    {
+        if (persistent)
         {
-            return persistent
-                ? await _localStorage.GetItemAsync<T>(key)
-                : _sessionStorage.GetItem<T>(key);
+            await _localStorage.SetItemAsync(key, value);
         }
-
-        public async Task SetStorageAsync<T>(bool persistent, string key, T value)
+        else
         {
-            if (persistent)
-            {
-                await _localStorage.SetItemAsync(key, value);
-            }
-            else
-            {
-                _sessionStorage.SetItem(key, value);
-            }
+            _sessionStorage.SetItem(key, value);
         }
-        public async Task SetItem(string key, string? value, bool persistent = true)
+    }
+    public async Task SetItem(string key, string? value, bool persistent = true)
+    {
+        if (persistent)
         {
-            if (persistent)
-            {
-                await _localStorage.SetItemAsync(key, value);
-            }
-            else
-            {
-                _sessionStorage.SetItem(key, value);
-            }
+            await _localStorage.SetItemAsync(key, value);
         }
-        public async Task<string?> GetItem(string key)
+        else
         {
-            var localValue = await _localStorage.GetItemAsync<string?>(key);
-            if (localValue != null)
-            {
-                return localValue;
-            }
-            return _sessionStorage.GetItem<string?>(key);
+            _sessionStorage.SetItem(key, value);
         }
-        public async Task RemoveItem(string key)
+    }
+    public async Task<string?> GetItem(string key)
+    {
+        var localValue = await _localStorage.GetItemAsync<string?>(key);
+        if (localValue != null)
         {
-            await _localStorage.RemoveItemAsync(key);
-            _sessionStorage.RemoveItem(key);
+            return localValue;
         }
-        public async Task<bool> IsPersistent(string key)
-        {
-            var localValue = await _localStorage.GetItemAsync<string?>(key);
-            return localValue is not null;
-        }
+        return _sessionStorage.GetItem<string?>(key);
+    }
+    public async Task RemoveItem(string key)
+    {
+        await _localStorage.RemoveItemAsync(key);
+        _sessionStorage.RemoveItem(key);
+    }
+    public async Task<bool> IsPersistent(string key)
+    {
+        var localValue = await _localStorage.GetItemAsync<string?>(key);
+        return localValue is not null;
     }
 }

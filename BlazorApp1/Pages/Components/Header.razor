@@ -9,7 +9,7 @@
                 <Language/>
                 <WebApps/>
                 <div class="ms-1 header-item d-none d-sm-flex">
-                    <button @onclick="ToggleFullscreen" type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle" >
+                    <button @onclick="@(async () => {await JS.InvokeVoidAsync("fullscreenHelper.toggleFullscreen");})" type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle">
                         <i class='bx bx-fullscreen fs-22'></i>
                     </button>
                 </div>
@@ -26,10 +26,3 @@
         </div>
     </div>
 </header>
-@code
-{
-    private async Task ToggleFullscreen()
-    {
-       Console.WriteLine("test");
-    }
-}

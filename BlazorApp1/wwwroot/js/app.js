@@ -3,99 +3,6 @@
         M = 7,
         t = "en",
         a = localStorage.getItem("language");
-    function o() {
-        n(null === a ? t : a);
-        var e = document.getElementsByClassName("language");
-        e &&
-            Array.from(e).forEach(function (t) {
-                t.addEventListener("click", function (e) {
-                    n(t.getAttribute("data-lang"));
-                });
-            });
-    }
-
-    function n(e) {
-        document.getElementById("header-lang-img") &&
-            ("en" == e
-                ? (document.getElementById("header-lang-img").src = "/images/flags/us.svg")
-                : "sp" == e
-                    ? (document.getElementById("header-lang-img").src = "/images/flags/spain.svg")
-                    : "gr" == e
-                        ? (document.getElementById("header-lang-img").src = "/images/flags/germany.svg")
-                        : "it" == e
-                            ? (document.getElementById("header-lang-img").src = "/images/flags/italy.svg")
-                            : "ru" == e
-                                ? (document.getElementById("header-lang-img").src = "/images/flags/russia.svg")
-                                : "ch" == e
-                                    ? (document.getElementById("header-lang-img").src = "/images/flags/china.svg")
-                                    : "fr" == e
-                                        ? (document.getElementById("header-lang-img").src = "/images/flags/french.svg")
-                                        : "ar" == e
-                                            ? (document.getElementById("header-lang-img").src = "/images/flags/ae.svg")
-                                            : "fa" == e && (document.getElementById("header-lang-img").src = "/images/flags/ir.svg"),
-
-
-                localStorage.setItem("language", e),
-                null == (a = localStorage.getItem("language")) && n(t),
-                (e = new XMLHttpRequest()).open("GET", "/lang/" + a + ".json"),
-                (e.onreadystatechange = function () {
-                    var a;
-                    4 === this.readyState &&
-                        200 === this.status &&
-                        ((a = JSON.parse(this.responseText)),
-                            Object.keys(a).forEach(function (t) {
-                                var e = document.querySelectorAll("[data-key='" + t + "']");
-                                Array.from(e).forEach(function (e) {
-                                    e.textContent = a[t];
-                                });
-                            }));
-                }),
-                e.send());
-
-
-    }
-
-    function s() {
-        var e;
-        document.querySelectorAll(".navbar-nav .collapse") &&
-            ((e = document.querySelectorAll(".navbar-nav .collapse")),
-                Array.from(e).forEach(function (t) {
-                    var a = new bootstrap.Collapse(t, { toggle: !1 });
-                    t.addEventListener("show.bs.collapse", function (e) {
-                        e.stopPropagation();
-                        var e = t.parentElement.closest(".collapse");
-                        e
-                            ? ((e = e.querySelectorAll(".collapse")),
-                                Array.from(e).forEach(function (e) {
-                                    e = bootstrap.Collapse.getInstance(e);
-                                    e !== a && e.hide();
-                                }))
-                            : ((e = (function (e) {
-                                for (var t = [], a = e.parentNode.firstChild; a;) 1 === a.nodeType && a !== e && t.push(a), (a = a.nextSibling);
-                                return t;
-                            })(t.parentElement)),
-                                Array.from(e).forEach(function (e) {
-                                    2 < e.childNodes.length && e.firstElementChild.setAttribute("aria-expanded", "false");
-                                    e = e.querySelectorAll("*[id]");
-                                    Array.from(e).forEach(function (e) {
-                                        e.classList.remove("show"),
-                                            2 < e.childNodes.length &&
-                                            ((e = e.querySelectorAll("ul li a")),
-                                                Array.from(e).forEach(function (e) {
-                                                    e.hasAttribute("aria-expanded") && e.setAttribute("aria-expanded", "false");
-                                                }));
-                                    });
-                                }));
-                    }),
-                        t.addEventListener("hide.bs.collapse", function (e) {
-                            e.stopPropagation();
-                            e = t.querySelectorAll(".collapse");
-                            Array.from(e).forEach(function (e) {
-                                (childCollapseInstance = bootstrap.Collapse.getInstance(e)).hide();
-                            });
-                        });
-                }));
-    }
     function i() {
         var n,
             e = document.documentElement.getAttribute("data-layout"),
@@ -710,7 +617,6 @@
                 a.addEventListener("change", function () {
                     document.documentElement.setAttribute(n, a.value),
                         sessionStorage.setItem(n, a.value),
-                        o(),
                         "data-layout-width" == n && "boxed" == a.value
                             ? (document.documentElement.setAttribute("data-sidebar-size", "sm-hover"), sessionStorage.setItem("data-sidebar-size", "sm-hover"), (document.getElementById("sidebar-size-small-hover").checked = !0))
                             : "data-layout-width" == n &&
@@ -1037,7 +943,6 @@
                     e.stopPropagation(), bootstrap.Tab.getInstance(e.target).show();
                 });
             }),
-            o(),
             s(),
             p(),
             window.addEventListener("resize", function () {

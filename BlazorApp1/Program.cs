@@ -27,9 +27,9 @@ builder.Services.AddMudServices();
 builder.Services.AddSingleton<CultureInfoManager>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-// builder.Services.AddSingleton<IStorageService, StorageService>(); not a real dp inj
+builder.Services.AddSingleton<IStorageService, StorageService>();
+builder.Services.AddSingleton<ICookieService, CookieService>();
 
-// register a custom localizer for the Telerik components, after registering the Telerik services
 builder.Services.AddSingleton(typeof(ITelerikStringLocalizer), typeof(ResxLocalizer));
 
 builder.Services.AddBlazoredLocalStorage();
@@ -45,8 +45,8 @@ StorageService._localStorage = localStorage;
 var storedCulture = await localStorage.GetItemAsync<string>("appCulture");
 var cultureName = string.IsNullOrEmpty(storedCulture) ? defaultCulture : storedCulture;
 var culture = CultureInfo.GetCultureInfo(cultureName);
-CultureInfo.DefaultThreadCurrentCulture = culture;
-CultureInfo.DefaultThreadCurrentUICulture = culture;
+Thread.CurrentThread.CurrentCulture = culture;
+Thread.CurrentThread.CurrentUICulture = culture;
 if (string.IsNullOrEmpty(storedCulture))
 {
     await localStorage.SetItemAsync("appCulture", defaultCulture);

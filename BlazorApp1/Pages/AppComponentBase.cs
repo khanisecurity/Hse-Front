@@ -15,7 +15,7 @@ namespace BlazorApp1.Pages
         [Inject] protected CultureInfoManager CultureManageer { get; set; }
         [Inject] protected IStorageService StorageService { get; set; }
         [Inject] protected ICookieService cookieService { get; set; }
-        [Inject] protected NavigationManager Navigation { get; set; }
+        [Inject] protected NavigationManager Navigation { get; set; } = default!;
         [Inject] protected IJSRuntime JS { get; set; }
         #endregion
      
