@@ -1,0 +1,12 @@
+﻿@inherits LayoutComponentBase
+
+@code {
+    protected bool isLoading = true;
+
+    protected async Task LoadDataAsync(Func<Task> loadMethod)
+    {
+        isLoading = true;
+        await loadMethod();
+        isLoading = false;
+    }
+}
