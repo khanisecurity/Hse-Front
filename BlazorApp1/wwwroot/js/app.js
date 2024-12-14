@@ -1,4 +1,4 @@
-﻿function LoadAll() {
+﻿﻿﻿function LoadAll() {
     var d = document.querySelector(".navbar-menu").innerHTML,
         M = 7,
         t = "en",

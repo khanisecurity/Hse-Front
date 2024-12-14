@@ -7,10 +7,10 @@ using System.Globalization;
 
 namespace BlazorApp1.Service
 {
-    public class StorageService : IStorageService  
+    public class StorageService : IStorageService
     {
-        public static ILocalStorageService _localStorage {  get; set; }
-        [Inject] ISyncLocalStorageService _sessionStorage {  get; set; } = default!;
+        public static ILocalStorageService _localStorage { get; set; }
+        [Inject] ISyncLocalStorageService _sessionStorage { get; set; } = default!;
 
         private async Task<T?> GetStorageAsync<T>(bool persistent, string key)
         {

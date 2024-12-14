@@ -1,0 +1,59 @@
+﻿<li class="nav-item">
+    <a class="nav-link menu-link Item" @onclick="Toggle" role="button">
+        <div>
+            <i class="@IconClass"></i>
+            <span data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAccount">@Title</span>
+        </div>
+        @if (!string.IsNullOrEmpty(Badge))
+        {
+            <span class="badge badge-pill bg-danger">@Badge</span>
+        }
+        else if (Items?.Any() == true)
+        {
+            <div class="slider-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" /></svg>
+            </div>
+        }   
+    </a>
+    @if (Items?.Any() == true)
+    {
+        <div class="collapse @(IsExpanded ? "show" : "")">
+            <ul class="nav nav-sm flex-column Item">
+                @foreach (var item in Items)
+                {
+                    <SidebarMenuItem Title="@item.Title" IconClass="@item.IconClass"
+                                     Badge="@item.Badge" Items="@item.Children" />
+                }
+            </ul>
+        </div>
+    }
+</li>
+
+<style>
+    .Item{
+        display : flex;
+        flex-direction : row;
+        padding-right: 10px !important;
+        justify-content : space-between
+    }
+
+    .slider-arrow
+    {
+        transform : scale(0.5);
+        direction : ltr;
+    }
+</style>
+@code {
+    [Parameter] public string Title { get; set; }
+    [Parameter] public string IconClass { get; set; }
+    [Parameter] public string Badge { get; set; }
+    [Parameter] public List<MenuItem> Items { get; set; }
+    [Parameter] public string Url { get; set; }
+
+    private bool IsExpanded { get; set; }
+
+    private void Toggle()
+    {
+        IsExpanded = !IsExpanded;
+    }
+}

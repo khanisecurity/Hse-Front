@@ -81,11 +81,22 @@
     <script src="_content/MudBlazor/MudBlazor.min.js"></script>
 
     <script>
-        window.blazorCulture = {
-            get: () => window.localStorage['BlazorCulture'],
-            set: (value) => window.localStorage['BlazorCulture'] = value
+        window.fullscreenHelper = {
+            toggleFullscreen: async function () {
+                const doc = document.documentElement;
+                if (!document.fullscreenElement) {
+                    await doc.requestFullscreen();
+                } else if (document.exitFullscreen) {
+                    await document.exitFullscreen();
+                }
+            },
+            isFullscreen: function () {
+                return !!document.fullscreenElement;
+            }
         };
     </script>
+
+
     <script src="_framework/blazor.webassembly.js" autostart="false"></script>
     <script src="/js/app.js" defer></script>
 
