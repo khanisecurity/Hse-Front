@@ -1,8 +1,7 @@
 ﻿using Telerik.Blazor.Components;
 using BlazorApp1.Models.Invoice;
 using BlazorApp1.Models.Products;
-using System.Globalization;
-using Telerik.SvgIcons;
+
 
 namespace BlazorApp1.Pages
 {

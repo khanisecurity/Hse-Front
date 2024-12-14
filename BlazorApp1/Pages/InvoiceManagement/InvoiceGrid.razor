@@ -4,20 +4,20 @@
 @using Pages.Components
 
 <TelerikGrid Data="@data" Height="400px">  
-    <GridToolBar>  
-        <button class="btn btn-primary" @onclick="ShowAddInvoicePopup">Add Invoice</button>  
-        <button class="btn btn-secondary" @onclick="ExportToExcel">Export to Excel</button>  
-    </GridToolBar>  
+    <GridToolBarTemplate>
+        <GridCommandButton Command="Add" Icon="@FontIcon.Plus" @onclick="ShowAddInvoicePopup">Add Invoice</GridCommandButton>
+        <GridCommandButton Command="ExcelExport" Icon="@FontIcon.FileExcel" @onclick="ExportToExcel">Export to Excel</GridCommandButton>
+    </GridToolBarTemplate> 
     <GridColumns>  
         <GridColumn Field="@nameof(Invoice.ProductTitle)" Title="Product" />  
         <GridColumn Field="@nameof(Invoice.Quantity)" Title="Quantity" />  
-        <GridColumn Field="@nameof(Invoice.Date)" Title="Date" />  
-        <GridColumn Title="Actions" IsActionColumn="true">  
+         <GridColumn Field="@nameof(Invoice.Date)" Title="Date" />  
+        <GridColumn Title="Actions">
             <Template>  
                 <button class="btn btn-warning" @onclick="@ShowEditInvoicePopup">Edit</button>
                 <button class="btn btn-danger" @onclick="@ConfirmDelete">Delete</button>
-            </Template>  
-        </GridColumn>  
+            </Template> 
+        </GridColumn>
     </GridColumns>  
 </TelerikGrid>  
 
@@ -45,15 +45,15 @@
         OnRefresh.InvokeAsync(); // Notify the parent to refresh
     }
 
-    private void ShowEditInvoicePopup(Invoice invoice)
+    private void ShowEditInvoicePopup(object invoice)
     {
         // Emit an event to show the edit invoice modal with the selected invoice
         OnRefresh.InvokeAsync(); // Notify the parent to refresh
     }
 
-    private void ConfirmDelete(Invoice invoice)
+    private void ConfirmDelete(object invoice)
     {
-        invoiceToDelete = invoice;
+        invoiceToDelete = invoice as Invoice;
         isModalVisible = true;
     }
 

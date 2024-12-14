@@ -1,14 +1,15 @@
-﻿@inherits AppComponentBase
+﻿@using System.Globalization
+@inherits AppComponentBase
 
 <div class="dropdown ms-1 topbar-head-dropdown header-item">
     <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
-            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <img id="header-lang-img" src="@SelectedLanguage.FlagUrl" alt="Header Language" height="20" class="rounded">
     </button>
     <div class="dropdown-menu dropdown-menu-end">
         @foreach (var language in Languages)
         {
-            <a class="dropdown-item notify-item language py-2" @onclick="() => ChangeLanguage(language.Culture)">
+            <a class="dropdown-item notify-item language py-2" data-lang="@language.LanguageName" @onclick="() => ChangeLanguage(language.Culture)">
                 <img src="@language.FlagUrl" alt="@language.Name" class="me-2 rounded" height="18">
                 <span class="align-middle">@language.Name</span>
             </a>
@@ -17,21 +18,21 @@
 </div>
 
 @code {
-    private record LanguageT(string Culture, string Name, string FlagUrl);
+    private record LanguageT(string Culture,string LanguageName, string Name, string FlagUrl);
     private List<LanguageT> Languages { get; set; } = new()
     {
-        new LanguageT("en-US", "English", "/images/flags/us.svg"),
-        new LanguageT("es-ES", "Spanish", "/images/flags/spain.svg"),
-        new LanguageT("de-DE", "German", "/images/flags/germany.svg"),
-        new LanguageT("it-IT", "Italian", "/images/flags/italy.svg"),
-        new LanguageT("ru-RU", "Russian", "/images/flags/russia.svg"),
-        new LanguageT("zh-CN", "Chinese", "/images/flags/china.svg"),
-        new LanguageT("fr-FR", "French", "/images/flags/french.svg"),
-        new LanguageT("ar-SA", "Arabic", "/images/flags/ae.svg"),
-        new LanguageT("fa-IR", "Farsi", "/images/flags/ir.svg"),
+        new LanguageT("en-US","en", "English", "/images/flags/us.svg"),
+        new LanguageT("es-ES","es", "Spanish", "/images/flags/spain.svg"),
+        new LanguageT("de-DE","de", "German", "/images/flags/germany.svg"),
+        new LanguageT("it-IT","it", "Italian", "/images/flags/italy.svg"),
+        new LanguageT("ru-RU","ru", "Russian", "/images/flags/russia.svg"),
+        new LanguageT("zh-CN","zh", "Chinese", "/images/flags/china.svg"),
+        new LanguageT("fr-FR","fr", "French", "/images/flags/french.svg"),
+        new LanguageT("ar-SA","ar", "Arabic", "/images/flags/ae.svg"),
+        new LanguageT("fa-IR","fa", "Farsi", "/images/flags/ir.svg"),
     };
 
-    private LanguageT SelectedLanguage { get; set; } = new("fa-IR", "Farsi", "/images/flags/ir.svg");
+    private LanguageT SelectedLanguage { get; set; } = new("fa-IR","fa", "Farsi", "/images/flags/ir.svg");
 
     private CultureInfo? SelectedCulture;
     protected override async Task OnInitAsync()

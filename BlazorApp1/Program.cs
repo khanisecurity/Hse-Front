@@ -27,7 +27,8 @@ builder.Services.AddMudServices();
 builder.Services.AddSingleton<CultureInfoManager>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-// builder.Services.AddSingleton<IStorageService, StorageService>(); not a real dp inj
+builder.Services.AddSingleton<IStorageService, StorageService>();
+builder.Services.AddSingleton<ICookieService, CookieService>();
 
 // register a custom localizer for the Telerik components, after registering the Telerik services
 builder.Services.AddSingleton(typeof(ITelerikStringLocalizer), typeof(ResxLocalizer));
@@ -38,6 +39,17 @@ builder.Services.AddBlazoredLocalStorage();
 var host = builder.Build();
 
 #region Localization with local storage
+//const string defaultCulture = "en-US";
+//var js = host.Services.GetRequiredService<IJSRuntime>();
+//var result = await js.InvokeAsync<string>("blazorCulture.get");
+//var culture = CultureInfo.GetCultureInfo(result ?? defaultCulture);
+
+//if (result == null)
+//    await js.InvokeVoidAsync("blazorCulture.set", defaultCulture);
+
+//CultureInfo.DefaultThreadCurrentCulture = culture;
+//CultureInfo.DefaultThreadCurrentUICulture = culture;
+
 
 const string defaultCulture = "en-US";
 var localStorage = host.Services.GetRequiredService<ILocalStorageService>();
@@ -45,11 +57,12 @@ StorageService._localStorage = localStorage;
 var storedCulture = await localStorage.GetItemAsync<string>("appCulture");
 var cultureName = string.IsNullOrEmpty(storedCulture) ? defaultCulture : storedCulture;
 var culture = CultureInfo.GetCultureInfo(cultureName);
+
 CultureInfo.DefaultThreadCurrentCulture = culture;
 CultureInfo.DefaultThreadCurrentUICulture = culture;
 if (string.IsNullOrEmpty(storedCulture))
 {
-    await localStorage.SetItemAsync("appCulture", defaultCulture);
+    await localStorage.SetItemAsync("language", defaultCulture);
 }
 #endregion
 
